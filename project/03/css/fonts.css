@@ -30,39 +30,16 @@
 	    url("../fonts/NanumBarunGothicBold.woff") format("woff");
 }
 
+
 @font-face {
-	font-family:"AgendaM";
-	src:url("../fonts/Agenda-Medium.ttf") format("truetype");
-	src:url("../fonts/Agenda-Medium.otf") format("opentype");
-	src:url("../fonts/Agenda-Medium.eot") format("embedded-opentype");
+	font-family:"segoeui";
+	src:url("../fonts/segoeui.ttf") format("truetype");
+	src:url("../fonts/segoeui.otf") format("opentype");
+	src:url("../fonts/segoeui.eot") format("embedded-opentype");
 }
 @font-face {
-	font-family:"AgendaL";
-	src:url("../fonts/Agenda-Light.ttf") format("truetype");
-	src:url("../fonts/Agenda-Light.otf") format("opentype");
-	src:url("../fonts/Agenda-Light.eot") format("embedded-opentype");
-}
-@font-face {
-	font-family:"AgendaB";
-	src:url("../fonts/Agenda-Bold.ttf") format("truetype");
-	src:url("../fonts/Agenda-Bold.otf") format("opentype");
-	src:url("../fonts/Agenda-Bold.eot") format("embedded-opentype");
-}
-@font-face {
-	font-family:"AgendaBl";
-	src:url("../fonts/Agenda-Black.ttf") format("truetype");
-	src:url("../fonts/Agenda-Black.otf") format("opentype");
-	src:url("../fonts/Agenda-Black.eot") format("embedded-opentype");
-}
-@font-face {
-	font-family:"AgendaLC";
-	src:url("../fonts/Agenda-LightCondensed.ttf") format("truetype");
-	src:url("../fonts/Agenda-LightCondensed.otf") format("opentype");
-	src:url("../fonts/Agenda-LightCondensed.eot") format("embedded-opentype");
-}
-@font-face {
-	font-family:"AgendaBC";
-	src:url("../fonts/Agenda-BoldCondensed.ttf") format("truetype");
-	src:url("../fonts/Agenda-BoldCondensed.otf") format("opentype");
-	src:url("../fonts/Agenda-BoldCondensed.eot") format("embedded-opentype");
+	font-family:"segoeuib";
+	src:url("../fonts/segoeuib.ttf") format("truetype");
+	src:url("../fonts/segoeuib.otf") format("opentype");
+	src:url("../fonts/segoeuib.eot") format("embedded-opentype");
 }
