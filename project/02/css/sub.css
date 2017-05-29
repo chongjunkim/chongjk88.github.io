@@ -1,0 +1,299 @@
+#container {
+	width: 100%; 
+	height: 1850px; 
+	position: absolute; 
+	z-index: 100; 
+	overflow: hidden; 
+}
+#container:after {clear:both; content:""; display:block; }
+
+
+#content {
+	width: 100%; 
+	height: 100%; 
+	margin: auto; 
+	padding-top: 30px; 
+	z-index: 100; 
+}
+#content .vis {
+	position: relative; 
+	width: 100%; 
+	height: 250px; 
+	margin: auto; 
+	overflow: hidden; 
+}
+#content .vis img {
+	width: 100%; 
+	position: absolute;
+	top: 20%; 
+	transform: translateY(-50%); 
+	-webkit-transform: translateY(-50%); 
+	-ms-transform: translateY(-50%);
+	
+}
+
+#content .back1 img {
+	position: absolute; 
+	z-index: 30; 
+	right: 70%; 
+	top: 400px; 
+	opacity: 0.3; 
+}
+#content .back2 img {
+	position: absolute; 
+	z-index: 30; 
+	left: 70%; 
+	top: 400px; 
+	opacity: 0.3; 
+}
+
+
+
+input {
+	border-radius: 5px; 
+	padding-left: 10px; 
+}
+
+#account {
+	position:relative; 
+	width: 1000px; 
+	height: 500px; 
+	margin: auto; 
+	overflow: hidden; 
+	background: #fff; 
+}
+#account h2 {
+	text-align: center; 
+	font-size: 40px; 
+}
+#account h4 {
+	text-align: center; 
+	font-size: 14px; 
+}
+#account h3 {
+	width: 800px; 
+	margin: auto; 
+	padding-left: 300px; 
+	font-family:"AgendaB";
+	font-size: 28px; 
+	border-top: 1px solid #333; 
+	margin-top: 50px; 
+}
+#account form {
+	position: absolute;
+	top: 200px; 
+	left: 300px; 
+}
+#account form fieldset p.text {
+	font-size: 20px; 
+	width: 400px; 
+}
+#account form fieldset > p:nth-of-type(2) {
+	margin-top: 20px; 
+}
+#account form fieldset > p:nth-of-type(4) {
+	margin-top: 20px; 
+}
+
+#account form fieldset p.text label {
+	width: 100px; 
+}
+#account form fieldset p.text input {
+	position: absolute; 
+	right: 0; 
+	margin-top: 4px; 
+	font-size: 18px; 
+}
+#account form fieldset p.file {
+	font-size: 20px; 
+	width: 400px; 
+	margin-top: 20px; 
+}
+#account form fieldset p.file label {
+	width: 100px; 
+}
+#account form fieldset p.file input {
+	position: absolute; 
+	right: 0; 
+	bottom: -30px; 
+	font-size: 18px; 
+	width: 400px; 
+	background: #fff; 
+	
+	font-size: 16px; 
+}
+#account_bg {
+	position: absolute; 
+	width: 330px; 
+	top: 170px; 
+	left: 630px; 
+}
+
+
+
+#personal {
+	position:relative; 
+	width: 1000px; 
+	height: 800px; 
+	margin: auto; 
+	overflow: hidden; 
+	background: #fff; 
+}
+#personal h3 {
+	width: 800px; 
+	margin: auto; 
+	padding-left: 300px; 
+	font-family:"AgendaB";
+	font-size: 28px; 
+	border-top: 1px solid #333; 
+	margin-top: 20px; 
+}
+#personal form {
+	position: absolute;
+	top: 100px; 
+	left: 300px; 
+}
+#personal form fieldset p.text {
+	font-size: 20px; 
+	width: 400px; 
+}
+#personal form fieldset > p:nth-of-type(3) {
+	margin-top: 20px; 
+}
+#personal form fieldset > p:nth-of-type(4) {
+	margin-top: 20px; 
+}
+#personal form fieldset > p:nth-of-type(5) {
+	margin-top: 20px; 
+}
+#personal form fieldset > p:nth-of-type(11) {
+	margin-top: 20px; 
+}
+#personal form fieldset > p:nth-of-type(11) {
+	margin-top: 20px; 
+}
+#personal form fieldset p.text label {
+	width: 100px; 
+}
+#personal form fieldset p.text input {
+	position: absolute; 
+	right: 0; 
+	margin-top: 4px; 
+	font-size: 18px; 
+}
+#personal form fieldset p.radio {
+	font-size: 20px; 
+	width: 400px; 
+}
+#personal form fieldset p.radio label:nth-of-type(2) {
+	margin-left: 20px; 
+}
+#personal form fieldset p.option {
+	font-size: 20px; 
+	width: 400px; 
+}
+#personal form fieldset p.option select {
+	position: absolute; 
+	right: 0; 
+	margin-top: 4px; 
+	font-size: 16px; 
+}
+#personal form fieldset p.check {
+	font-size: 20px; 
+	width: 400px; 
+}
+#personal form fieldset p.check input {
+	position: absolute; 
+	right: 0; 
+	margin-top: 4px; 
+	font-size: 16px; 
+}
+#personal form fieldset p.information {
+	font-size: 20px; 
+	width: 400px; 
+}
+#personal form fieldset p.information textarea {
+	position: absolute; 
+	right: 0; 
+	bottom: -110px; 
+	font-size: 18px; 
+	width: 400px; 
+}
+
+#personal p.finish {
+	
+	text-align: center; 
+	font-size: 20px; 
+	margin-top: 680px; 
+}
+#personal p.finish a {
+	width: 200px; 
+	height: 50px; 
+	margin: auto; 
+	display: block; 
+	background: #c10d0e; 
+	color: #fff; 
+	line-height: 2.4; 
+}
+#personal_bg {
+	position: absolute; 
+	width: 400px; 
+	top: 200px; 
+	left: 600px; 
+}
+
+
+#footerwrap {
+	position: fixed; 
+	bottom: 0; 
+	width: 100%; 
+	height: 250px; 
+	z-index: 90; 
+	background: #fff; 
+	opacity: 0; 
+}
+#footer2 {width:1000px; margin:auto; }
+#footer2 .fmenu {margin-top:20px; border-top:10px solid #c10d0e; }
+#footer2 .fmenu li {float:left; width:250px; }
+#footer2 .fmenu li a {padding-left:10px; display:block; height:100px; }
+#footer2 .fmenu li a:hover {background:#eee; }
+#footer2 .fmenu li a em {font-size:15px; font-family:"AgendaB"; color:#b00808; text-transform:uppercase; line-height:2; }
+#footer2 .fmenu li a span {line-height:1.2; }
+
+
+#hider2 {
+	position:fixed; 
+	bottom: 0; 
+	width: 100%; 
+	height: 9%; 
+	background: #fff; 
+	line-height: 2.6; 
+	z-index: 90; 
+	opacity: 0; 
+}
+#hider2 .fnav {
+	width: 1000px; 
+	margin: auto; 
+	clear:both; 
+}
+#hider2 .fnav li {float:left; margin-left:20px; }
+#hider2 .fnav li:first-child {margin-left:0; }
+#hider2 address {
+	width: 1000px; 
+	margin: auto; 
+	clear:both; 
+}
+#hider2 .back {
+	position: relative; 
+	width: 1000px; 
+	margin: auto; 
+}
+#hider2 .back a {
+	position: absolute; 
+	right: 0; 
+	bottom:0;
+}
+#hider2 .back a img {
+	margin-left: 5px; 
+	margin-bottom: 5px; 
+}
