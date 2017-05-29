@@ -1,0 +1,226 @@
+#headerwrap {
+	position:relative; 
+	width: 100%; 
+	height: 100%; 
+	margin: auto; 
+	z-index: 2000; 
+}
+
+#topmenu {
+	position: fixed; 
+	width: 100%; 
+	height: 100px; 
+	margin: auto; 
+	margin-top: -100px; 
+	background: #004080; 
+	z-index: 1000; 
+	transition: 0.5s ease-in-out;
+}
+#topmenu:hover {
+	margin-top: -1px; 
+}
+#topmenu .signin {
+	position: absolute; 
+	right: 20px; 
+	bottom: -35px; 
+	width: 80px; 
+	height: 35px; 
+	background: #ccc; 
+	font-size: 14px; 
+	color: #333; 
+	text-align: center; 
+	transition: 0.5s ease-in-out; 
+}
+#topmenu .signin a {
+	display: block; 
+	transition: 0.5s ease-in-out; 
+	color: #333; 
+	line-height: 2.3; 
+}
+#topmenu:hover .signin {
+	background: #004080; 
+	bottom: 56px; 
+}
+#topmenu:hover .signin a {
+	color: #fff; 
+	line-height: 3; 
+}
+#topmenu .search {
+	width: 90%; 
+	margin-left: 20%; 
+	margin-top: 20px; 
+}
+#topmenu .search input {
+	vertical-align: middle; 
+	padding-left: 5px; 
+}
+#topmenu .search .searchBox {
+	padding: 4px 10px; 
+	border: 1px solid #fff; 
+	width: 50%; 
+	background: none; 
+	color: #fff; 
+	font-size: 14px; 
+	z-index: 1000; 
+}
+#topmenu .hot {
+	margin-left: 21%; 
+	margin-top: 15px; 
+}
+#topmenu .hot ul {
+	color: #fff; 
+	font-size: 12px; 
+}
+#topmenu .hot ul li {
+	float: left; 
+	padding: 0 15px; 
+	border-right: 1px solid gray; 
+}
+#topmenu .hot ul li:first-child {
+	border: none; 
+	padding: 0; 
+}
+#topmenu .hot ul li:last-child {
+	border: none; 
+}
+#topmenu .hot ul li a {
+	color: #fff; 
+	font-size: 12px; 
+}
+#topmenu .login01 {
+	position: absolute; 
+	right: 104px; 
+	top: 20px; 
+}
+#topmenu .login01 input {
+	padding: 3px; 
+}
+#topmenu .login02 {
+	position: absolute; 
+	right: 55px; 
+	top: 50px; 
+}
+#topmenu .login02 input {
+	padding: 3px; 
+	margin-left: 2px; 
+}
+#topmenu .login02 label {
+	color: #fff; 
+	margin-left: 2px; 
+}
+#topmenu .login03 {
+	position: absolute; 
+	right: 280px; 
+	top: 26px; 
+}
+#topmenu .login03 a {
+	padding: 17px 5px; 
+	font-size: 12px; 
+	color: #fff; 
+	text-align:c enter; 
+	line-height: 3.5; 
+	border: 1px solid gray; 
+}
+
+#header {
+	position: fixed; 
+	top: -260px; 
+	width: 100%; 
+	height: 400px; 
+	background: #fff; 
+	z-index: 900; 
+	overflow: hidden; 
+}
+
+#menu {
+	position: absolute; 
+	bottom: 0; 
+	width: 100%; 
+	height: 0; 
+	text-align:center; 
+	z-index: 900; 
+	background:#fff; 
+	border-bottom:1px solid #c8d1da; 
+}
+#menu h1 {
+	width: 706px; 
+	height: 110px; 
+	padding-top: 30px; 
+	background: #fff; 
+	position: absolute; 
+	bottom: 0; 
+	left: 50%; 
+	transform: translateX(-50%); 
+	-webkit-transform: translateX(-50%); 
+	-ms-transform: translateX(-50%);	
+}
+#menu ul {
+	position: absolute;
+	bottom: 0;  
+	left: 50%; 
+	transform: translateX(-50%); 
+	-webkit-transform: translateX(-50%); 
+	-ms-transform: translateX(-50%);	
+	width:706px; 
+	height:35px; 
+	margin:auto; 
+}
+#menu ul li {
+	float: left; 
+	width: 140px; 
+	height: 35px; 
+	line-height: 3; 
+	border-left: 1px solid #c8d1da; 
+	text-transform: uppercase; 
+	background: #fff; 
+	transition:0.3s linear; 
+}
+#menu ul li a {
+	display: block; 
+}
+#menu ul li:first-child {
+	border: none; 
+}
+#menu ul li:hover {
+	background: #eee; 
+}
+
+#nav {
+	position: absolute; 
+	bottom: -40px; 
+	left: 0; 
+	width: 100%; 
+	height: 300px; 
+	margin: auto; 
+	overflow: hidden; 
+	border-bottom: 1px solid #c8d1da; 
+	z-index: 800; 
+}
+#gnb {
+	width: 706px;
+	height: 100%; 
+	margin: auto; 
+}
+#gnb .m {
+	float: left; 
+	width: 140px; 
+	height: 100%; 
+	margin-left: 1px; 
+	text-transform: uppercase; 
+}
+#gnb li:first-child {
+	margin-left: 0; 
+}
+#gnb .m a {
+	width: 100%; 
+	display: block; 
+	text-align: center; 
+	line-height: 3; 
+	transition: 0.1s linear; 
+}
+#gnb .m a:hover {
+	text-decoration: underline;
+}
+#gnb .m ul {
+	width: 140px; 
+}

@@ -1,0 +1,533 @@
+#gnb .m:nth-child(3) {background: #eee; }
+
+#subcontainer {
+	position: relative; 
+	width: 1200px; 
+	height: 100%; 
+	margin: auto; 
+	background: #fff; 
+}
+#subcontainer:after {
+	clear: both; 
+	content: ""; 
+	display: block; 
+}
+#subcontainer:after {
+	position: absolute; 
+	top: 105px; 
+	left: 50%; 
+	transform: translateX(-50%); 
+	-webkit-transform: translateX(-50%); 
+	-ms-transform: translateX(-50%);	
+	display: block; 
+	content: ""; 
+	clear: both;
+	width: 40px; 
+	height: 40px; 
+	background: #c8d1da; 
+	transform: rotate(315deg); 
+	z-index: 30; 
+	margin-left: -20px; 
+}
+
+#submenu {width:200px; }
+
+#sidebar {float:left; }
+#sidebar nav {padding:20px 0; }
+#sidebar .sidenav {width:180px; }
+#sidebar .sidenav .s {
+	width:180px; 
+	border-bottom:1px solid #ccc; 
+}
+#sidebar .sidenav .s a {
+	height:35px; 
+	display:block; 
+	color:#333; 
+	line-height:2.4; 
+	text-indent:10px; 
+	font-size:14px; 
+	transition:0.2s ease-in-out; 
+	background: #fff; 
+}
+#sidebar .sidenav .s a:hover {
+	background:#ccc; 
+	color:#333; 
+}
+#sidebar .sidenav .s ul li a {
+	line-height:2.8; 
+	text-indent:20px; 
+	background:#fff; 
+	color:#333; 
+	font-size:12px; 
+}
+#sidebar .sidenav .s ul li a:hover {background:#eee; }
+
+.sideon {background:#ccc; }
+
+#content {
+	position:relative; 
+	margin-left:200px; 
+	width:1000px; 
+	height:1000px; 
+}
+#content .subnav {
+	position:absolute; 
+	right:0; 
+	top:35px; 
+	z-index:100; 
+}
+#content .subnav ul li {
+	float:left; 
+	margin-left:10px; 
+	color:#6b6b6b; 
+}
+#content .subnav ul li span {
+	color:#333; 
+	margin-left:10px; 
+}
+#content .subnav ul li em {
+	color:#333; 
+	font-weight:bold; 
+}
+#content .subnav ul li a {color:#6b6b6b; }
+#content .subnav ul li a:hover {color:#333; }
+
+.subon {
+	position:fixed; 
+	top:20px; 
+	width:220px; 
+}
+
+#subcontainer {
+	padding-top:130px; 
+	z-index:90; 
+	background: #fff; 
+}
+
+#content {
+	height:3750px; 
+	background: #fff; 
+}
+#content .submain {
+	position:relative; 
+	width:1000px; 
+	padding-top:55px; 
+}
+#content .submain p span {
+	font-weight: 600; 
+	position:absolute; 
+	left:20px; 
+	top:170px; 
+	font-size:24px; 
+}
+
+#model dl {
+	position: absolute; 
+	top: 260px; 
+	left: 0; 
+	width: 1000px; 
+}
+#model dl dt {
+	text-align: center; 
+	font-size: 30px; 
+	text-transform: uppercase; 
+	font-weight: 600;
+}
+#model .model {
+	font-size: 14px; 
+}
+#model .model p.model1 {
+	position: absolute; 
+	top: 100px;
+	right: 500px; 
+}
+#model .model p.model2 {
+	position: absolute; 
+	top: 295px;
+	left: 170px; 
+}
+#model .model p.model3 {
+	position: absolute; 
+	top: 324px;
+	left: 180px; 
+}
+
+#model .spec {
+	position: absolute; 
+	top: 100px;
+	right: 10px; 
+	width: 440px; 
+}
+#model .spec ul {
+	border-top: 2px solid #333; 
+	padding-top:10px; 
+}
+#model .spec ul li {
+	overflow:hidden; 
+	border-bottom:1px solid #ccc; 
+	margin-bottom:10px; 
+	padding-bottom:10px; 
+	padding-left:5px; 
+	font-size: 14px; 
+}
+#model .spec ul li em {float:left; font-weight: 600;}
+#model .spec ul li span {float:right;}
+
+
+
+
+#info1 {
+	position: absolute; 
+	top: 700px; 
+	left: 0; 
+	width: 1000px; 
+	border-top: 1px solid #aaa; 
+	padding-top: 50px; 
+}
+#info1 .divider {
+	position: absolute; 
+	top: -25px;
+	left: 50%; 
+	transform: translateX(-50%); 
+	-webkit-transform: translateX(-50%); 
+	-ms-transform: translateX(-50%);	
+	font-size: 30px; 
+	width: 300px; 
+	background: #fff; 
+	text-align: center; 
+	font-weight: 600;
+}
+#info1 article {
+	float: left; 
+	width: 300px; 
+	margin-top: 85px; 
+	margin-left: 20px; 
+}
+#info1 article strong {
+	font-weight: bold; 
+	font-size: 18px; 
+}
+#info1 .infopic img {
+	float: right; 
+	width: 650px; 
+}
+
+#info2 {
+	position: absolute; 
+	top: 1200px; 
+	left: 0; 
+	width: 1000px; 
+}
+#info2 article {
+	float: right; 
+	width: 300px; 
+	margin-top: 60px; 
+	margin-right: 20px; 
+}
+#info2 article strong {
+	font-weight: bold; 
+	font-size: 18px; 
+}
+#info2 .infopic img {
+	float: left; 
+	width: 650px; 
+}
+
+#info3 {
+	position: absolute; 
+	top: 1650px; 
+	left: 0; 
+	width: 1000px; 
+}
+#info3 article {
+	float: left; 
+	width: 300px; 
+	margin-top: 110px; 
+	margin-left: 20px; 
+}
+#info3 article strong {
+	font-weight: bold; 
+	font-size: 18px; 
+}
+#info3 .infopic img {
+	float: right; 
+	width: 650px; 
+}
+
+#info4 {
+	position: absolute; 
+	top: 2100px; 
+	left: 0; 
+	width: 1000px; 
+}
+#info4 article {
+	float: right; 
+	width: 300px; 
+	margin-top: 80px; 
+	margin-right: 20px; 
+}
+#info4 article strong {
+	font-weight: bold; 
+	font-size: 18px; 
+}
+#info4 .infopic img {
+	float: left; 
+	width: 650px; 
+}
+
+#info5 {
+	position: absolute; 
+	top: 2550px; 
+	left: 0; 
+	width: 1000px; 
+}
+#info5 article {
+	float: left; 
+	width: 300px; 
+	margin-top: 40px; 
+	margin-left: 20px; 
+}
+#info5 article strong {
+	font-weight: bold; 
+	font-size: 18px; 
+}
+#info5 .infopic img {
+	float: right; 
+	width: 650px; 
+}
+
+#info6 {
+	position: absolute; 
+	top: 3020px; 
+	left: 0; 
+	width: 1000px; 
+	border-top: 1px solid #aaa; 
+	padding-top: 50px; 
+}
+#info6 .divider {
+	position: absolute; 
+	top: -25px;
+	left: 50%; 
+	transform: translateX(-50%); 
+	-webkit-transform: translateX(-50%); 
+	-ms-transform: translateX(-50%);	
+	font-size: 30px; 
+	width: 300px; 
+	background: #fff; 
+	text-align: center; 
+	font-weight: 600;
+}
+.tabmenu {
+	position:relative; 
+	width:1002px; 
+}
+.tabmenu .tab {
+	width: 100%; 
+	border-bottom:1px solid #aaa; 
+	height:29px; 
+}
+.tabmenu .tab li {
+	width:125.2px; 
+	float:left; 
+	display:block; 
+	height:29px; 
+	text-align:center; 
+	position:relative;
+}
+.tabmenu .tab li span {
+	display:block; 
+	border:1px solid #ddd; 
+	border-bottom:0; 
+	left:0; 
+	top:0; 
+	width:122px; 
+	height:20px; 
+	padding-top:8px; 
+	position:absolute; 
+	cursor:pointer;
+}
+.tabmenu .tab li.on span {
+	font-weight: 600; 
+	padding-bottom:1px; 
+	border:1px solid #aaa; 
+	border-bottom:0; 
+	width:122px; 
+	background:#fff; 
+}
+.tabmenu div {
+	display:none; 
+	clear:both; 
+	width:1000px; 
+	height:420px; 
+	overflow-x: scroll; 
+	overflow-y: hidden; 
+	border-left: 1px solid #aaa; 
+	border-right: 1px solid #aaa; 
+	border-bottom: 1px solid #aaa; 
+}
+.tabmenu .text1 {margin-top:20px; width: 2900px; }
+.tabmenu .text1 dt {position: absolute; top: 36px; left: 13px; font-size: 16px; }
+.tabmenu .text1 dd {float: left; margin-top: 10px; }
+.tabmenu .text1 dd a {width:300px; height: 340px; margin: 5px 10px; text-align: center; display: block; }
+.tabmenu .text1 dd a img {margin-bottom: 10px; }
+.tabmenu .text1 dd a em {font-weight: 600;font-size: 16px; }
+
+.tabmenu .text2 {margin-top:20px; width: 2570px; }
+.tabmenu .text2 dt {position: absolute; top: 36px; left: 13px; font-size: 16px; }
+.tabmenu .text2 dd {float: left; margin-top: 10px; }
+.tabmenu .text2 dd a {width:300px; height: 340px; margin: 5px 10px; text-align: center; display: block; }
+.tabmenu .text2 dd a img {margin-bottom: 10px; }
+.tabmenu .text2 dd a em {font-weight: 600;font-size: 16px; }
+
+.tabmenu .text3 {margin-top:20px; width: 1610px; }
+.tabmenu .text3 dt {position: absolute; top: 36px; left: 13px; font-size: 16px; }
+.tabmenu .text3 dd {float: left; margin-top: 10px; }
+.tabmenu .text3 dd a {width:300px; height: 340px; margin: 5px 10px; text-align: center; display: block; }
+.tabmenu .text3 dd a img {margin-bottom: 10px; }
+.tabmenu .text3 dd a em {font-weight: 600;font-size: 16px; }
+
+.tabmenu .text4 {margin-top:20px; width: 2570px; }
+.tabmenu .text4 dt {position: absolute; top: 36px; left: 13px; font-size: 16px; }
+.tabmenu .text4 dd {float: left; margin-top: 10px; }
+.tabmenu .text4 dd a {width:300px; height: 340px; margin: 5px 10px; text-align: center; display: block; }
+.tabmenu .text4 dd a img {margin-bottom: 10px; }
+.tabmenu .text4 dd a em {font-weight: 600;font-size: 16px; }
+
+.tabmenu .text5 {margin-top:20px; width: 1610px; }
+.tabmenu .text5 dt {position: absolute; top: 36px; left: 13px; font-size: 16px; }
+.tabmenu .text5 dd {float: left; margin-top: 10px; }
+.tabmenu .text5 dd a {width:300px; height: 340px; margin: 5px 10px; text-align: center; display: block; }
+.tabmenu .text5 dd a img {margin-bottom: 10px; }
+.tabmenu .text5 dd a em {font-weight: 600;font-size: 16px; }
+
+.tabmenu .text6 {margin-top:20px; width: 1000px; }
+.tabmenu .text6 dt {position: absolute; top: 36px; left: 13px; font-size: 16px; }
+.tabmenu .text6 dd {float: left; margin-top: 10px; }
+.tabmenu .text6 dd a {width:300px; height: 340px; margin: 5px 10px; text-align: center; display: block; }
+.tabmenu .text6 dd a img {margin-bottom: 10px; }
+.tabmenu .text6 dd a em {font-weight: 600;font-size: 16px; }
+
+.tabmenu .text7 {margin-top:20px; width: 1000px; }
+.tabmenu .text7 dt {position: absolute; top: 36px; left: 13px; font-size: 16px; }
+.tabmenu .text7 dd {float: left; margin-top: 10px; }
+.tabmenu .text7 dd a {width:300px; height: 340px; margin: 5px 10px; text-align: center; display: block; }
+.tabmenu .text7 dd a img {margin-bottom: 10px; }
+.tabmenu .text7 dd a em {font-weight: 600;font-size: 16px; }
+
+.tabmenu .text8 {margin-top:20px; width: 1300px; }
+.tabmenu .text8 dt {position: absolute; top: 36px; left: 13px; font-size: 16px; }
+.tabmenu .text8 dd {float: left; margin-top: 10px; }
+.tabmenu .text8 dd a {width:300px; height: 340px; margin: 5px 10px; text-align: center; display: block; }
+.tabmenu .text8 dd a img {margin-bottom: 10px; }
+.tabmenu .text8 dd a em {font-weight: 600;font-size: 16px; }
+
+
+.more1 a {
+	position: absolute;
+	top: 530px; 
+	left: 330px; 
+	width: 100px; 
+	height: 80px; 
+	background: #c8d1da; 
+	text-align: center; 
+	font-size: 20px; 
+	display: block; 
+	padding-top: 20px; 
+	transition: 0.3s linear; 
+	line-height: 1.4; 
+}
+#info6 .more1 a:hover {
+	background: #ddd; 
+}
+#info6 .more2 a {
+	position: absolute; 
+	top: 530px; 
+	left: 450px; 
+	width: 100px; 
+	height: 65px; 
+	background: #c8d1da; 
+	text-align: center; 
+	font-size: 20px; 
+	display: block; 
+	padding-top: 35px; 
+	transition: 0.3s linear; 
+	line-height: 1.4; 
+}
+#info6 .more3 a:hover {
+	background: #ddd; 
+}
+#info6 .more3 a {
+	position: absolute; 
+	top: 530px; 
+	left: 570px; 
+	width: 100px; 
+	height: 65px; 
+	background: #c8d1da; 
+	text-align: center; 
+	font-size: 20px; 
+	display: block; 
+	padding-top: 35px; 
+	transition: 0.3s linear; 
+	line-height: 1.4; 
+}
+#info6 .more3 a:hover {
+	background: #ddd; 
+}
+
+
+#content .subbottom {
+	width:780px; 
+	height:158px; 
+	margin-left:25px; 
+	overflow:hidden; 
+}
+#content .subbottom li {
+	float:left; 
+	margin-left:10px; 
+	text-align:center; 
+	line-height:2; 
+}
+#content .subbottom li:first-child {margin-left: 0; }
+#content .subbottom li a img {width: 175px; }
+#content .subbottom li a span {
+	display:block; 
+	margin-top:3px; 
+}
+
+#content button {
+	border: none !important; 
+	box-shadow: none !important; 
+	outline: 0; 
+	cursor:pointer; 
+}
+#content .prev {
+	position:absolute; 
+	left:0; 
+	bottom:205px; 
+}
+#content .next {
+	position:absolute; 
+	right:0; 
+	bottom:205px; 
+}
+
+#content .plus {
+	margin-top:50px; 
+	margin-left:174px; 
+}
+#content .plus li {
+	float:left; 
+	margin-left:10px; 
+}
+#content .plus li a {
+	width:200px; 
+	height:40px; 
+	color:#333; 
+	font-size:20px; 
+	border:1px solid #ccc; 
+	text-align:center; 
+	line-height:1.9; 
+	transition:0.2s ease-in-out; 
+	display:block; 
+}
+#content .plus li a:hover {background:#eee; }

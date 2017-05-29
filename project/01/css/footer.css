@@ -1,0 +1,113 @@
+#footerwrap {
+	width: 100%; 
+	background: #333; 
+}
+#footer {
+	position: relative; 
+	width: 1000px; 
+	height: 450px; 
+	margin: auto; 
+}
+#footer .fg {
+	width: 200px; 
+}
+
+#footer .fg:nth-child(1) {position: absolute; left: 0; top: 60px; }
+#footer .fg:nth-child(2) {position: absolute; left: 0; top: 200px; }
+
+#footer .fg:nth-child(3) {position: absolute; left: 280px; top: 60px; }
+#footer .fg:nth-child(4) {position: absolute; left: 280px; top: 170px; }
+
+#footer .fg:nth-child(5) {position: absolute; left: 550px; top: 60px; }
+#footer .fg:nth-child(6) {position: absolute; left: 550px; top: 230px; }
+
+#footer .fg:nth-child(7) {position: absolute; left: 800px; top: 60px; }
+
+#footer .fg span {
+	line-height: 1.5; 
+	text-transform: uppercase; 
+}
+#footer .fg ul {
+	margin-left: 3px; 
+	margin-top: 2px; 
+}
+#footer .fg ul li {
+	margin-top: 2px; 
+}
+#footer .fg ul li:hover {
+	text-decoration: underline; 
+}
+#footer .fg ul li a {
+	display: block; 
+}
+
+#footer .sns ul li {
+	margin-left: 30px; 
+	margin-bottom: 5px; 
+}
+#footer .sns ul li:hover {
+	text-decoration: none; 
+}
+#footer .sns ul li a {
+	line-height: 2; 
+	display: block; 
+}
+#footer .sns ul li:last-child a {
+	line-height: 2.5; 
+}
+#footer .sns ul li a img {
+	margin-right: 10px; 
+	transition: 0.3s linear; 
+	opacity: 0.5; 
+}
+#footer .sns ul li a:hover img {
+	opacity: 1;
+}
+
+#footer ul li {
+	color: #fff; 
+	font-size: 14px; 
+}
+#footer ul li ul li a {
+	color: #fff; 
+	font-size: 12px; 
+}
+
+#footer .address {
+	position: relative; 
+	position: absolute; 
+	bottom: 0; 
+	width: 1000px; 
+	margin: auto; 
+}
+#footer .address ul {
+	position: absolute; 
+	left: 0; 
+	bottom: 50px; 
+}
+#footer .address ul li {
+	float: left; 
+	margin-left: 20px; 
+	font-size: 12px; 
+}
+#footer .address ul li:first-child {
+	margin-left: 0; 
+}
+#footer .address ul li a {
+	color: #fff; 
+}
+#footer .address ul li span {
+	color: gray; 
+}
+#footer .address p {
+	color: #fff; 
+	position: absolute; 
+	left: 0; 
+	bottom: 28px; 
+}
+
+#footer .address h1 {
+	position: absolute; 
+	right: 10px; 
+	bottom: 20px; 
+}
