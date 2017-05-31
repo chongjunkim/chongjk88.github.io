@@ -26,7 +26,7 @@ function opn() {
 			$(".summary").hide();
 			
 			setTimeout(function () {
-				$("#stats, #carousel").stop().animate({opacity : "show"}, 800, "easeOutQuint");
+				$("#stats").stop().animate({opacity : "show"}, 800, "easeOutQuint");
 				$('.circlestat').empty().circliful();
 			}, 1800);
 			setTimeout(function () {
