@@ -26,7 +26,7 @@ function opn() {
 			$(".summary").hide();
 			
 			setTimeout(function () {
-				$("#stats").stop().animate({opacity : "show"}, 800, "easeOutQuint");
+				$("#stats, #carousel").stop().animate({opacity : "show"}, 800, "easeOutQuint");
 				$('.circlestat').empty().circliful();
 			}, 1800);
 			setTimeout(function () {
@@ -35,9 +35,6 @@ function opn() {
 		} else {
 			$("#m_sites").hide();
 			
-			setTimeout(function () {
-				$("#m_sites").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
-			}, 100);
 		}
 		
 		return false;
