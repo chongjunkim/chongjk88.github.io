@@ -157,7 +157,7 @@ html[xmlns] .clearfix { display: block; }
 	color: #333; 
 }
 
-#bottom {
+#wrap #bottom {
 	width: 100%;
 	height: 50%;
 	background: #fff;
