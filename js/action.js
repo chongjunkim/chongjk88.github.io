@@ -17,8 +17,8 @@ function opn() {
 	var width = $("body").width();
 	
 	$(".open").click(function () {
-		$("#bottom").stop().animate({bottom: 0}, 1800, "easeOutBounce");
-		$("#top").stop().animate({top: 0}, 1800, "easeOutBounce");
+		$("#bottom").stop().animate({bottom: '0'}, 1800, "easeOutBounce");
+		$("#top").stop().animate({top: '0'}, 1800, "easeOutBounce");
 		setTimeout(function () {
 			$("#sites ul.steps").stop().animate({opacity : "show"}, 1000, "easeOutQuint");
 		}, 1800);

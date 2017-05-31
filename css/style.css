@@ -158,12 +158,12 @@ html[xmlns] .clearfix { display: block; }
 }
 
 #bottom {
-	width: 100%; 
-	height: 50%; 
-	background: #fff; 
-	position: absolute; 
-	bottom: -50%; 
-	z-index: 50; 
+	width: 100%;
+	height: 50%;
+	background: #fff;
+	position: absolute;
+	bottom: -50%;
+	z-index: 50;
 }
 #sites {
 	width: 1400px;
