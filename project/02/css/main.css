@@ -21,7 +21,7 @@
 	color: #fff; 
 	line-height: 1.2; 
 	text-transform: uppercase; 
-	font-family: "AgendaBl"; 
+    font-weight: 900;
 }
 #visual .link a {
 	position: absolute; 
@@ -31,7 +31,7 @@
 	padding: 10px 50px; 
 	color: #fff; 
 	background: #b00808; 
-	font-family: "AgendaB"; 
+
 	}
 #visual .link a:hover {background:#c10d0e; }
 
@@ -50,9 +50,9 @@
 #content .c {position:relative; width:100%; height:700px; overflow:hidden; }
 #content .c1 {background: #fff; }
 #content .c1 h2 {position:relative; text-align:center; padding-top:50px; z-index:100; }
-#content .c1 h2 strong {font-size:100px; font-family:"AgendaBC"; color:orange; line-height:0.8; }
+#content .c1 h2 strong {font-size:100px; color:orange; line-height:0.8; }
 #content .c1 h2 strong em {color:#b00808; }
-#content .c1 h2 span {font-size:30px; font-family:"AgendaLC"; line-height:3; }
+#content .c1 h2 span {font-size:30px; line-height:3; }
 #content .c1 .left > img {position:absolute; left:-780px; top:0; width:80%; }
 #content .c1 .right > img {position:absolute; right:-700px; top:-80px; width:80%; }
 
@@ -122,12 +122,12 @@
 }
 .cpop article > p {
 	width: 880px; 
-	font-family: "calibri"; 
+
 	font-size: 16px; 
 	padding: 10px 50px 10px 50px; 
 }
 .cpop article > p em {
-	font-family: "AgendaB"; 
+
 	font-size: 30px; 
 }
 .cpop article > .cimgsmall {
@@ -136,7 +136,7 @@
 	margin-top: 20px; 
 }
 .cpop article > .cimgsmall li {
-	font-family:"AgendaL";
+
 	text-align: center; 
 	width: 110px; 
 	height: 110px; 
@@ -212,13 +212,19 @@
 }
 
 
+#content h2 {
+    font-weight: 700;
+}
+#content h2 em {
+    font-weight: 700;
+}
 
 
 #content .c2 {background: #ffffdc; }
 #content .c2 h2 {text-align:center; padding-top:50px; }
-#content .c2 h2 em {font-size:100px; font-family:"AgendaBC"; color:#b00808; }
-#content .c2 h2 span {font-size:50px; font-family:"AgendaLC"; line-height:1; }
-#content .c2 h2 a {font-size:30px; font-family:"AgendaB"; color:#c10d0e; padding:10px 20px; border:5px solid #c10d0e; border-radius:15px; line-height:4; }
+#content .c2 h2 em {font-size:100px; color:#b00808; }
+#content .c2 h2 span {font-size:50px; line-height:1; }
+#content .c2 h2 a {font-size:30px; color:#c10d0e; padding:10px 20px; border:5px solid #c10d0e; border-radius:15px; line-height:4; }
 #content .c2 h2 a:hover {background:#c10d0e; color:#fff; }
 
 #content .c2 ul {
@@ -236,13 +242,13 @@
 #content .c3 {background:#e13527; }
 #content .c3 p {text-align:center; padding-top:50px; }
 #content .c3 .signup {text-align:center; margin-top:-30px; }
-#content .c3 .signup li {font-family:"AgendaLC"; color:#fff; }
-#content .c3 .signup li:nth-child(1) {font-size:100px; font-family:"AgendaBC"; }
+#content .c3 .signup li {color:#fff; }
+#content .c3 .signup li:nth-child(1) {font-size:100px; }
 #content .c3 .signup li:nth-child(2) {line-height:1.5; font-size:30px; }
 #content .c3 .signup li:nth-child(3) input {width:500px; font-size:20px; padding:10px 20px; background:#c10d0e; color:#fff; border-radius:15px; border:none; }
 #content .c3 .signup li:nth-child(4) {line-height:1.5; font-size:18px; }
 #content .c3 .signup li:nth-child(5) {line-height:2.4; }
-#content .c3 .signup li:nth-child(5) a {padding:8px 40px; background:#fff; font-size:30px; color:#e13527; border-radius:15px; font-family:"AgendaB"; }
+#content .c3 .signup li:nth-child(5) a {padding:8px 40px; background:#fff; font-size:30px; color:#e13527; border-radius:15px; }
 #content .c3 .signup li:nth-child(5) a:hover {background:#c10d0e; color:#fff; }
 
 #content .c4 {width:100%; background:#ccc; }
@@ -268,7 +274,7 @@
 	height: 50px; 
 	background: rgba(51, 51, 51, 0.5); 
 	color: #fff; 
-	font-family:"AgendaB";
+
 	font-size: 30px; 
 	text-align: center; 
 	
@@ -289,8 +295,8 @@
 #content .c4 .fb .fbinside li:first-child {margin-top:0; }
 #content .c4 .fb .fbinside li h4 {float:left; }
 #content .c4 .fb .fbinside li a {width:220px; height:85px; display:block; border:1px solid #eee; }
-#content .c4 .fb .fbinside li a span {text-align:left; position:absolute; left:95px; top:10px; line-height:1.5; font-family:"AgendaL"; }
-#content .c4 .fb .fbinside li a span em {font-family:"AgendaB"; }
+#content .c4 .fb .fbinside li a span {text-align:left; position:absolute; left:95px; top:10px; line-height:1.5; }
+#content .c4 .fb .fbinside li a span em {}
 #content .c4 .fb .likeit {position:absolute; left:80px; top:50px; transform:scale(0.6); }
 #content .c4 .fb .fbinside li p {color:#fff; }
 
@@ -310,9 +316,9 @@
 #content .c4 .in .ininside li:first-child {margin-top:0; }
 #content .c4 .in .ininside li a {display:block; }
 #content .c4 .in .ininside li p {line-height:1.1; color:#fff; margin-top:5px; }
-#content .c4 .in .ininside li p a {display:inline; font-family:"AgendaL"; color:#ccc; }
+#content .c4 .in .ininside li p a {display:inline; color:#ccc; }
 
-#content .c4 .like a {width:300px; height:50px; color:#fff; display:block; text-align:center; font-size:30px; text-transform:uppercase; font-family:"AgendaB"}
+#content .c4 .like a {width:300px; height:50px; color:#fff; display:block; text-align:center; font-size:30px; text-transform:uppercase; }
 #content .c4 .l1 a {background:#456db2; }
 #content .c4 .l2 a {background:#2da3d1; }
 #content .c4 .l3 a {background:#444444; }
@@ -328,13 +334,13 @@
 }
 #content .c5 .map li, #content .c4 ul li a {
 	text-align:center; 
-	font-family:"AgendaLC"; 
+	
 	color:#fff; 
 }
-#content .c5 .map li:nth-child(1) {font-size:100px; font-family:"AgendaBC"; text-shadow:2px 2px 10px #333; }
+#content .c5 .map li:nth-child(1) {font-size:100px; text-shadow:2px 2px 10px #333; }
 #content .c5 .map li:nth-child(2) {line-height:1.5; font-size:50px; }
-#content .c5 .map li:nth-child(3) input {width:400px; font-size:20px; color:#fff; font-family:"AgendaL"; padding:10px 20px; background:rgba(255, 255, 255, 0.3); border-radius:15px; border:none; }
-#content .c5 .map li:nth-child(4) a {font-size:50px; font-family:"AgendaB"; line-height:1.4; color:#fff; }
+#content .c5 .map li:nth-child(3) input {width:400px; font-size:20px; color:#fff; padding:10px 20px; background:rgba(255, 255, 255, 0.3); border-radius:15px; border:none; }
+#content .c5 .map li:nth-child(4) a {font-size:50px; line-height:1.4; color:#fff; }
 #content .c5 .map li:nth-child(4) a:hover {text-shadow:1px 1px 5px #333; }
 
 
@@ -351,7 +357,7 @@
 #footer .fmenu li {float:left; width:250px; }
 #footer .fmenu li a {padding-left:10px; display:block; height:100px; }
 #footer .fmenu li a:hover {background:#eee; }
-#footer .fmenu li a em {font-size:15px; font-family:"AgendaB"; color:#b00808; text-transform:uppercase; line-height:2; }
+#footer .fmenu li a em {font-size:15px; color:#b00808; text-transform:uppercase; line-height:2; }
 #footer .fmenu li a span {line-height:1.2; }
 
 
