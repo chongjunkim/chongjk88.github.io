@@ -162,6 +162,7 @@ html[xmlns] .clearfix { display: block; }
 	height: 50%;
 	background: #fff;
 	position: absolute;
+    top: auto;
 	bottom: -50%;
 	z-index: 50;
 }
