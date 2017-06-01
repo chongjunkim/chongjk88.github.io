@@ -12,7 +12,9 @@ $(function () {
 
 function opn() {
     'use strict';
-	$("#sites ul.steps, #stats, #carousel").hide();
+	$("#sites ul.steps").hide();
+	$("#stats").hide();
+	$("#carousel").hide();
 	
 	var width = $("body").width();
 	
