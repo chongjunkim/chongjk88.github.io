@@ -22,21 +22,25 @@ function opn() {
 		setTimeout(function () {
 			$("#sites ul.steps").stop().animate({opacity : "show"}, 1000, "easeOutQuint");
 		}, 1800);
-        setTimeout(function () {
-            $(".summary").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
-        }, 1800);
 		if (width > 1000) {
-			
 			setTimeout(function () {
 				$("#stats, #carousel").stop().animate({opacity : "show"}, 800, "easeOutQuint");
 				$('.circlestat').empty().circliful();
 			}, 1800);
+            
+            setTimeout(function () {
+                $(".summary").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
+            }, 3300);
 		} else {
 			$("#m_sites").hide();
 			
 			setTimeout(function () {
 				$("#m_sites").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
 			}, 100);
+            
+            setTimeout(function () {
+                $(".summary").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
+            }, 1800);
 		}
 		
 		return false;
