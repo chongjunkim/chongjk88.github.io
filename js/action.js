@@ -12,9 +12,7 @@ $(function () {
 
 function opn() {
     'use strict';
-	$("#sites ul.steps").hide();
-	$("#stats").hide();
-	$("#carousel").hide();
+	$("#sites ul.steps, #stats, #carousel, .summary").hide();
 	
 	var width = $("body").width();
 	
@@ -24,16 +22,15 @@ function opn() {
 		setTimeout(function () {
 			$("#sites ul.steps").stop().animate({opacity : "show"}, 1000, "easeOutQuint");
 		}, 1800);
+        setTimeout(function () {
+            $(".summary").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
+        }, 3300);
 		if (width > 1000) {
-			$(".summary").hide();
 			
 			setTimeout(function () {
 				$("#stats, #carousel").stop().animate({opacity : "show"}, 800, "easeOutQuint");
 				$('.circlestat').empty().circliful();
 			}, 1800);
-			setTimeout(function () {
-				$(".summary").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
-			}, 3300);
 		} else {
 			$("#m_sites").hide();
 			
