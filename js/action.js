@@ -24,7 +24,7 @@ function opn() {
 		}, 1800);
         setTimeout(function () {
             $(".summary").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
-        }, 3300);
+        }, 1000);
 		if (width > 1000) {
 			
 			setTimeout(function () {
