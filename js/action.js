@@ -18,7 +18,7 @@ function opn() {
 	
 	$(".open").click(function () {
 		$("#top").stop().animate({top: '0'}, 1800, "easeOutBounce");
-		$("#wrap #bottom").stop().animate({bottom: '0'}, 1800, "easeOutBounce");
+		$("#bottom").stop().animate({bottom: '0'}, 1800, "easeOutBounce");
 		setTimeout(function () {
 			$("#sites ul.steps").stop().animate({opacity : "show"}, 1000, "easeOutQuint");
 		}, 1800);
@@ -47,8 +47,8 @@ function opn() {
 function cls() {
     'use strict';
 	$(".close").click(function () {
-		$("#bottom").stop().animate({bottom: "-50%"}, 2000, "easeOutQuint");
 		$("#top").stop().animate({top: "-50%"}, 2000, "easeOutQuint");
+		$("#bottom").stop().animate({bottom: "-40%"}, 2000, "easeOutQuint");
 		setTimeout(function () {
 			$("#sites ul.steps").stop().animate({opacity : "hide"}, 2000, "easeOutQuint");
 		}, 500);
