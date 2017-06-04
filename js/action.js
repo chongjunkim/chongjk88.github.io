@@ -415,9 +415,9 @@ function details() {
 		setTimeout(function () {$("#sites a.back").animate({"opacity" : "show"}, 500); }, 2000);
 		
 		$("#sites a.button").show();
-		$("#sites dl dt:eq(0)").animate({"padding-top" : "93px"}, 1000);
-		$("#sites dl dt:eq(1)").animate({"padding-top" : "93px"}, 1000);
-		$("#sites dl dt:eq(2)").animate({"padding-top" : "93px"}, 1000);
+		$("#sites dl dt:eq(0)").animate({"padding-top" : "37px"}, 1000);
+		$("#sites dl dt:eq(1)").animate({"padding-top" : "37px"}, 1000);
+		$("#sites dl dt:eq(2)").animate({"padding-top" : "37px"}, 1000);
 		$("#sites dl dt:eq(3)").animate({"opacity" : "hide"}, 1000);
 		$("#sites dl dd").animate({"top" : "-100px"}, 1000);
 		
