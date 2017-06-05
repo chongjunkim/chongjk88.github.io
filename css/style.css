@@ -37,15 +37,14 @@
 }
 
 #info {
-	position: absolute; 
-	left: 50%;
-	margin-left: -90px; 
-	margin-top: 150px; 
-	top: 50%; 
-	transform: translateY(-50%); 
-	-webkit-transform: translateY(-50%); 
-	-ms-transform: translateY(-50%); 
-	z-index: 30; 
+	position: absolute;
+    width: 100%;
+	margin-top: 150px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	z-index: 30;
 }
 .info {
 	font-family: 'Julius Sans One', sans-serif; 
