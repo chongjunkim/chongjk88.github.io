@@ -343,7 +343,7 @@ function proj() {
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "500px"}, 200);
+		$(".project_img").stop().animate({height : "2270px"}, 200);
 		
 		$("#sites p.p1_title").stop().animate({opacity : "hide"}, 100);
 		$("#sites p.p2_title").stop().animate({opacity : "hide"}, 100);
@@ -594,7 +594,7 @@ function details() {
 	});
 	$("#sites dl dd.box4 ul li a.go_details").click(function () {
 		setTimeout(function () {$("#sites .p4_title").animate({"opacity" : "show"}, 500); }, 1000);
-		$(".project_img").stop().animate({height : "500px"}, 200);
+		$(".project_img").stop().animate({height : "2270px"}, 200);
 		
 		return false;
 	});
@@ -722,7 +722,7 @@ function arrows() {
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "500px"}, 200);
+		$(".project_img").stop().animate({height : "2270px"}, 200);
 		
 		var bottom = $("#bottom").height(),
             percent = $("#bottom").parent().height() * 0.60;

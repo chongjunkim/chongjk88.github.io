@@ -420,7 +420,8 @@ html[xmlns] .clearfix { display: block; }
 
 .project_info {
 	line-height: 1.4; 
-	margin-left: 620px; 
+	margin-left: 620px;
+    font-size: 13px;
 }
 #sites_details div ul li span {
 	font-family: 'Julius Sans One', sans-serif;
