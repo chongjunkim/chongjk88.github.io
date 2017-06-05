@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "open sans";
+	src: url("../fonts/OpenSans-Regular.eot") format("embedded-opentype"),
+		 url("../fonts/OpenSans-Regular.otf") format("opentype"),
+		 url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "opensansB";
+	src: url("../fonts/OpenSans-ExtraBold.eot") format("embedded-opentype"),
+		 url("../fonts/OpenSans-ExtraBold.otf") format("opentype"),
+		 url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}

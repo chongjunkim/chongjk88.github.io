@@ -201,7 +201,7 @@ html[xmlns] .clearfix { display: block; }
 	height: 330px; 
 	position: absolute; 
 	top: 3%; 
-	left: 60%;
+	left: 58%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);	
@@ -488,6 +488,13 @@ html[xmlns] .clearfix { display: block; }
 	left: 75%; 
 }
 #sites a.p3_button {
+	width: 70px; 
+	height: 75px; 
+	position: absolute;
+	top: 280px; 
+	left: 80%; 
+}
+#sites a.p4_button {
 	width: 70px; 
 	height: 75px; 
 	position: absolute;
