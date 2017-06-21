@@ -55,61 +55,61 @@ function nav(){
 	});
 
 
-	$('.menu1').mouseover(function () {
-		$("#preview").attr("src", "images/menu1.png");
-	});
-	$('.menu2').mouseover(function () {
-		$("#preview").attr("src", "images/menu2.png");
-	});
-	$('.menu3').mouseover(function () {
-		$("#preview").attr("src", "images/menu3.png");
-	});
-	$('.menu4').mouseover(function () {
-		$("#preview").attr("src", "images/menu4.png");
-	});
-	$('.menu5').mouseover(function () {
-		$("#preview").attr("src", "images/menu5.png");
-	});
-	$('.menu6').mouseover(function () {
-		$("#preview").attr("src", "images/menu6.png");
-	});
-	
-	$('.story1').mouseover(function () {
-		$("#preview").attr("src", "images/story1.jpg");
-	});
-	$('.story2').mouseover(function () {
-		$("#preview").attr("src", "images/story2.jpg");
-	});
-	$('.story3').mouseover(function () {
-		$("#preview").attr("src", "images/story3.jpg");
-	});
-	
-	$('.career1').mouseover(function () {
-		$("#preview").attr("src", "images/career1.jpg");
-	});
-	$('.career2').mouseover(function () {
-		$("#preview").attr("src", "images/career2.jpg");
-	});
-	$('.career3').mouseover(function () {
-		$("#preview").attr("src", "images/career3.jpg");
-	});
-	
-	$('.service1').mouseover(function () {
-		$("#preview").attr("src", "images/service1.jpg");
-	});
-	$('.service2').mouseover(function () {
-		$("#preview").attr("src", "images/service2.jpg");
-	});
-	$('.service3').mouseover(function () {
-		$("#preview").attr("src", "images/service3.jpg");
-	});
-	
-	$('.location1').mouseover(function () {
-		$("#preview").attr("src", "images/location1.jpg");
-	});
-	$('.location2').mouseover(function () {
-		$("#preview").attr("src", "images/location2.jpg");
-	});
+//	$('.menu1').mouseover(function () {
+//		$("#preview").attr("src", "images/menu1.png");
+//	});
+//	$('.menu2').mouseover(function () {
+//		$("#preview").attr("src", "images/menu2.png");
+//	});
+//	$('.menu3').mouseover(function () {
+//		$("#preview").attr("src", "images/menu3.png");
+//	});
+//	$('.menu4').mouseover(function () {
+//		$("#preview").attr("src", "images/menu4.png");
+//	});
+//	$('.menu5').mouseover(function () {
+//		$("#preview").attr("src", "images/menu5.png");
+//	});
+//	$('.menu6').mouseover(function () {
+//		$("#preview").attr("src", "images/menu6.png");
+//	});
+//	
+//	$('.story1').mouseover(function () {
+//		$("#preview").attr("src", "images/story1.jpg");
+//	});
+//	$('.story2').mouseover(function () {
+//		$("#preview").attr("src", "images/story2.jpg");
+//	});
+//	$('.story3').mouseover(function () {
+//		$("#preview").attr("src", "images/story3.jpg");
+//	});
+//	
+//	$('.career1').mouseover(function () {
+//		$("#preview").attr("src", "images/career1.jpg");
+//	});
+//	$('.career2').mouseover(function () {
+//		$("#preview").attr("src", "images/career2.jpg");
+//	});
+//	$('.career3').mouseover(function () {
+//		$("#preview").attr("src", "images/career3.jpg");
+//	});
+//	
+//	$('.service1').mouseover(function () {
+//		$("#preview").attr("src", "images/service1.jpg");
+//	});
+//	$('.service2').mouseover(function () {
+//		$("#preview").attr("src", "images/service2.jpg");
+//	});
+//	$('.service3').mouseover(function () {
+//		$("#preview").attr("src", "images/service3.jpg");
+//	});
+//	
+//	$('.location1').mouseover(function () {
+//		$("#preview").attr("src", "images/location1.jpg");
+//	});
+//	$('.location2').mouseover(function () {
+//		$("#preview").attr("src", "images/location2.jpg");
+//	});
 
 
 
