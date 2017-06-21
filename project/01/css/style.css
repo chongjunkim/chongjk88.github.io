@@ -80,8 +80,8 @@ h2, h3 {
     position: absolute;
     top: -10px;
     left: -10px;
-    width: 60px;
-    height: 48px;
+    width: 70px;
+    height: 55px;
     background: rgba(2,18,36,0.7);
 }
     .navBarLine {
@@ -489,6 +489,10 @@ h2, h3 {
     #navBar {
         width: 40px;
         height: 40px;
+    }
+    #navBar:before {
+        width: 60px;
+        height: 48px;
     }
     .navBarLine {
         height: 4px;
