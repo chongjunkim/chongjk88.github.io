@@ -75,6 +75,15 @@ h2, h3 {
     height: 50px;
     cursor: pointer;
 }
+#navBar:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height: 48px;
+    background: rgba(2,18,36,0.7);
+}
     .navBarLine {
         position: absolute;
         width: 100%;
@@ -100,6 +109,8 @@ h2, h3 {
         font-size: 18px;
         line-height: 2;
         cursor: pointer;
+        background: rgba(2,18,36,0.7);
+        padding: 10px;
     }
     #subNav ul li:hover {
         text-shadow: 0 0 10px #0099ff;
@@ -393,23 +404,23 @@ h2, h3 {
         font-size: 16px;
     }
 
-
+.back:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    width: 135px;
+    height: 38px;
+    background: rgba(2,18,36,0.7);
+    z-index: -1;
+}
 
 
 
 
 
 @media (max-width: 1260px) {
-    .back:before {
-        content: "";
-        position: absolute;
-        top: -10px;
-        left: -15px;
-        width: 135px;
-        height: 38px;
-        background: rgba(2,18,36,0.7);
-        z-index: -1;
-    }
+    
     .mainCategory2 {
         background: url(../img/parallax2.jpg) center / cover no-repeat;
     }
@@ -474,15 +485,6 @@ h2, h3 {
         width: 40px;
         height: 40px;
     }
-    #navBar:before {
-        content: "";
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        width: 60px;
-        height: 48px;
-        background: rgba(2,18,36,0.7);
-    }
     .navBarLine {
         height: 4px;
     }
@@ -496,11 +498,6 @@ h2, h3 {
     #subNav {
         top: -10px;
         left: 60px;
-    }
-    
-    #subNav ul li {
-        background: rgba(2,18,36,0.7);
-        padding: 10px;
     }
     
     
