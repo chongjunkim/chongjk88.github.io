@@ -10,6 +10,24 @@ $(function () {
 	arrows();
 });
 
+function preload(arrayOfImages) {
+    'use strict';
+    $(arrayOfImages).each(function () {
+        $('<img/>')[0].src = this;
+        // Alternatively you could use:
+        // (new Image()).src = this;
+    });
+}
+
+// Usage:
+
+preload([
+    'img/1_smallslide.png',
+    'img/2_smallslide.png',
+    'img/3_smallslide.png',
+    'img/4_smallslide.png'
+]);
+
 function opn() {
     'use strict';
 	$("#sites ul.steps, #stats, #carousel, .summary").hide();
@@ -226,7 +244,7 @@ function proj() {
 		$("#sites dl dt a:eq(0)").addClass("on");
 		
 		$("#p1").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "2300px"}, 200);
+		$(".project_img").stop().animate({height : "3000px"}, 200);
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "hide"}, 500);
@@ -265,7 +283,7 @@ function proj() {
 		
 		$("#p1").stop().animate({opacity : "hide"}, 500);
 		$("#p2").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "3700px"}, 200);
+		$(".project_img").stop().animate({height : "2300px"}, 200);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "hide"}, 500);
 		
@@ -304,7 +322,7 @@ function proj() {
 		$("#p1").stop().animate({opacity : "hide"}, 500);
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "1450px"}, 200);
+		$(".project_img").stop().animate({height : "3700px"}, 200);
 		$("#p4").stop().animate({opacity : "hide"}, 500);
 		
 		$("#sites p.p1_title").stop().animate({opacity : "hide"}, 100);
@@ -343,7 +361,7 @@ function proj() {
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "2270px"}, 200);
+		$(".project_img").stop().animate({height : "2300px"}, 200);
 		
 		$("#sites p.p1_title").stop().animate({opacity : "hide"}, 100);
 		$("#sites p.p2_title").stop().animate({opacity : "hide"}, 100);
@@ -576,7 +594,8 @@ function details() {
 	
 	$("#sites dl dd.box1 ul li a.go_details").click(function () {
 		setTimeout(function () {$("#sites .p1_title").animate({"opacity" : "show"}, 500); }, 1000);
-		$(".project_img").stop().animate({height : "2300px"}, 200);
+        $("#stats").animate({"opacity" : "hide"}, 400);
+		$(".project_img").stop().animate({height : "3000px"}, 200);
         
 		$("#sites a.p1_button").css("left", "8%");
 		$("#sites a.p2_button").css("left", "73%");
@@ -587,19 +606,19 @@ function details() {
 	});
 	$("#sites dl dd.box2 ul li a.go_details").click(function () {
 		setTimeout(function () {$("#sites .p2_title").animate({"opacity" : "show"}, 500); }, 1000);
-		$(".project_img").stop().animate({height : "3700px"}, 200);
+		$(".project_img").stop().animate({height : "2300px"}, 200);
 		
 		return false;
 	});
 	$("#sites dl dd.box3 ul li a.go_details").click(function () {
 		setTimeout(function () {$("#sites .p3_title").animate({"opacity" : "show"}, 500); }, 1000);
-		$(".project_img").stop().animate({height : "1450px"}, 200);
+		$(".project_img").stop().animate({height : "3700px"}, 200);
 		
 		return false;
 	});
 	$("#sites dl dd.box4 ul li a.go_details").click(function () {
 		setTimeout(function () {$("#sites .p4_title").animate({"opacity" : "show"}, 500); }, 1000);
-		$(".project_img").stop().animate({height : "2270px"}, 200);
+		$(".project_img").stop().animate({height : "2300px"}, 200);
 		
 		return false;
 	});
@@ -616,6 +635,7 @@ function details() {
 		$("#sites dl dt:eq(3)").animate({"padding-top" : 0}, 1000);
 		$("#sites dl dt:eq(4)").animate({"opacity" : "show"}, 1000);
 		$("#sites dl dd").animate({"top" : 0}, 1000);
+        $("#stats").animate({"opacity" : "show"}, 400);
 		
 		$(".next_proj").stop().animate({top : "160px"}, 1000);
 		$(".prev_proj").stop().animate({top : "160px"}, 1000);
@@ -629,7 +649,7 @@ function arrows() {
 	$("#arrow_proj1 .next_proj img").click(function () {
 		$("#p1").stop().animate({opacity : "hide"}, 500);
 		$("#p2").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "3700px"}, 200);
+		$(".project_img").stop().animate({height : "2300px"}, 200);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "hide"}, 500);
 		
@@ -678,7 +698,7 @@ function arrows() {
 		$("#p1").stop().animate({opacity : "hide"}, 500);
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "1450px"}, 200);
+		$(".project_img").stop().animate({height : "3700px"}, 200);
 		$("#p4").stop().animate({opacity : "hide"}, 500);
 		
 		var bottom = $("#bottom").height(),
@@ -727,7 +747,7 @@ function arrows() {
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "2270px"}, 200);
+		$(".project_img").stop().animate({height : "2300px"}, 200);
 		
 		var bottom = $("#bottom").height(),
             percent = $("#bottom").parent().height() * 0.60;
@@ -776,7 +796,7 @@ function arrows() {
     
 	$("#arrow_proj2 .prev_proj img").click(function () {
 		$("#p1").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "2300px"}, 200);
+		$(".project_img").stop().animate({height : "3000px"}, 200);
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "hide"}, 500);
@@ -825,7 +845,7 @@ function arrows() {
 	$("#arrow_proj3 .prev_proj img").click(function () {
 		$("#p1").stop().animate({opacity : "hide"}, 500);
 		$("#p2").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "3700px"}, 200);
+		$(".project_img").stop().animate({height : "2300px"}, 200);
 		$("#p3").stop().animate({opacity : "hide"}, 500);
 		$("#p4").stop().animate({opacity : "hide"}, 500);
 		
@@ -874,7 +894,7 @@ function arrows() {
 		$("#p1").stop().animate({opacity : "hide"}, 500);
 		$("#p2").stop().animate({opacity : "hide"}, 500);
 		$("#p3").stop().animate({opacity : "show"}, 500);
-		$(".project_img").stop().animate({height : "1450px"}, 200);
+		$(".project_img").stop().animate({height : "3700px"}, 200);
 		$("#p4").stop().animate({opacity : "hide"}, 500);
 		
 		var bottom = $("#bottom").height(),
