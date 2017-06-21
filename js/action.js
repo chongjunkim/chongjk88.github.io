@@ -571,11 +571,13 @@ function details() {
 	$("#sites a.back").hide();
 	$("#sites a.button").hide();
 	$("#sites p.title").hide();
+	$(".project_img").hide();
 	
 	$("#sites dl dd ul li a.go_details").click(function () {
 		$("#bottom").animate({height: "100%", "padding-bottom" : "280px"}, 1000, "easeInQuart");
 		$("#sites_details").animate({"opacity" : "show"}, 400);
-		
+        $("#stats").animate({"opacity" : "hide"}, 400);
+        setTimeout(function () {$(".project_img").stop().animate({"opacity" : "show"}, 800); }, 1000);
 		setTimeout(function () {$("#sites a.back").animate({"opacity" : "show"}, 500); }, 2000);
 		
 		$("#sites a.button").show();
@@ -594,8 +596,7 @@ function details() {
 	
 	$("#sites dl dd.box1 ul li a.go_details").click(function () {
 		setTimeout(function () {$("#sites .p1_title").animate({"opacity" : "show"}, 500); }, 1000);
-        $("#stats").animate({"opacity" : "hide"}, 400);
-		$(".project_img").stop().animate({height : "3000px"}, 200);
+        $(".project_img").stop().animate({height : "3000px"}, 200);
         
 		$("#sites a.p1_button").css("left", "8%");
 		$("#sites a.p2_button").css("left", "73%");
@@ -636,6 +637,7 @@ function details() {
 		$("#sites dl dt:eq(4)").animate({"opacity" : "show"}, 1000);
 		$("#sites dl dd").animate({"top" : 0}, 1000);
         $("#stats").animate({"opacity" : "show"}, 400);
+        $(".project_img").stop().animate({"opacity" : "hide"}, 200);
 		
 		$(".next_proj").stop().animate({top : "160px"}, 1000);
 		$(".prev_proj").stop().animate({top : "160px"}, 1000);
