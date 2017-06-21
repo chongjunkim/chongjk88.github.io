@@ -400,8 +400,6 @@ h2, h3 {
 
 
 @media (max-width: 1260px) {
-    
-    
     .back:before {
         content: "";
         position: absolute;
@@ -412,7 +410,13 @@ h2, h3 {
         background: rgba(2,18,36,0.7);
         z-index: -1;
     }
-    
+    .mainCategory2 {
+        background: url(../img/parallax2.jpg) center / cover no-repeat;
+    }
+
+    .mainCategory3 {
+        background: url(../img/parallax1.jpg) center / cover no-repeat;
+    }
     
     #characterListWarp {
         width: 100%;
