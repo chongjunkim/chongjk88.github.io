@@ -31,6 +31,14 @@ function navBar() {
             });
         }, 300);
     });
+    
+    $('#hero, #visualwrap, #container, #footer').click(function () {
+        setTimeout(function () {
+            $("#subNav ul li").each(function (index) {
+                $(this).fadeOut(300);
+            });
+        }, 300);
+    });
 }
 
 function navBarRotate() {
