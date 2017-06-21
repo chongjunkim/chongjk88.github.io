@@ -17,32 +17,35 @@ function navBar() {
     'use strict';
     
     $('#subNav ul li').hide();
+    $('#navBar').addClass('open');
     
-    $("#navBar").click(function () {
-        if ($('#navBar').hasClass("open")) {
-            $('#subNav ul li').fadeIn(1000);
-            $('#navBar').removeClass("open");
+    $('#navBar').click(function () {
+        if ($('#navBar').hasClass('open')) {
+            $('#subNav ul li').stop().fadeIn(400);
+            $('#navBar').removeClass('open');
         } else {
-            $('#navBar').addClass("open");
-            $('#subNav ul li').fadeOut(1000);
+            $('#navBar').addClass('open');
+            $('#subNav ul li').stop().fadeOut(400);
         }
     });
     
     
     $('#nav').mouseleave(function () {
         setTimeout(function () {
-            $("#subNav ul li").each(function (index) {
+            $('#subNav ul li').each(function (index) {
                 $(this).fadeOut(300);
             });
         }, 400);
+        $('#navBar').addClass('open');
     });
     
     $('#hero, #visualwrap, #container, #footer').click(function () {
         setTimeout(function () {
-            $("#subNav ul li").each(function (index) {
+            $('#subNav ul li').each(function (index) {
                 $(this).fadeOut(300);
             });
         }, 400);
+        $('#navBar').addClass('open');
     });
 }
 
