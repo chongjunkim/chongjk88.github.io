@@ -18,18 +18,23 @@ function navBar() {
     
     $('#subNav ul li').hide();
     
-    $('#navBar').click(function () {
-        $("#subNav ul li").each(function (index) {
-            $(this).delay(100 * index).fadeIn(300);
-        });
+    $("#navBar").click(function () {
+        if ($('#navBar').hasClass("open")) {
+            $('#subNav ul li').fadeIn(1000);
+            $('#navBar').removeClass("open");
+        } else {
+            $('#navBar').addClass("open");
+            $('#subNav ul li').fadeOut(1000);
+        }
     });
+    
     
     $('#nav').mouseleave(function () {
         setTimeout(function () {
             $("#subNav ul li").each(function (index) {
                 $(this).fadeOut(300);
             });
-        }, 300);
+        }, 400);
     });
     
     $('#hero, #visualwrap, #container, #footer').click(function () {
@@ -37,7 +42,7 @@ function navBar() {
             $("#subNav ul li").each(function (index) {
                 $(this).fadeOut(300);
             });
-        }, 300);
+        }, 400);
     });
 }
 
