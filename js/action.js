@@ -577,7 +577,12 @@ function details() {
 	$("#sites dl dd.box1 ul li a.go_details").click(function () {
 		setTimeout(function () {$("#sites .p1_title").animate({"opacity" : "show"}, 500); }, 1000);
 		$(".project_img").stop().animate({height : "2300px"}, 200);
-		
+        
+		$("#sites a.p1_button").css("left", "8%");
+		$("#sites a.p2_button").css("left", "73%");
+		$("#sites a.p3_button").css("left", "78%");
+		$("#sites a.p4_button").css("left", "83%");
+        
 		return false;
 	});
 	$("#sites dl dd.box2 ul li a.go_details").click(function () {
