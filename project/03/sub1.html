@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8" /> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>CJK Project #3 - CEO Information</title>
-	<meta name="viewport" content="width=1500; initial-scale=1.0">
+	<title>CJK Project #2 - Signup</title>
+	<meta name="viewport" content="width=1500, initial-scale=1.0">
 	<meta name="author" content="Chongjun Kim" />
 	<link rel="shortcut icon" href="img/favicon_1.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -16,12 +16,39 @@
 	<script type="text/javascript" src="js/jquery.js"> </script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"> </script>
 	<script type="text/javascript" src="js/action.js"> </script>
+		
+<style>
+	* {margin:0; padding:0; }
+	a {text-decoration:none; color:#333; }
+	li {list-style:none; }
+ </style> 
+ <script>
+	$(window).scroll( function(){
+		var top  = $(window).scrollTop();
+		
+        if ($(window).scrollTop() >= ($(document).height() - $(window).height())) {
+        	$('#footerwrap').stop().animate({opacity:1}, 100);
+        	$('#hider2').stop().animate({opacity:1}, 100);
+        	$('#footerwrap').css("z-index" , "100");
+        	$('#hider2').css("z-index" , "100");
+        	
+        } else {
+        	$('#footerwrap').stop().animate({opacity:0}, 100);
+			$('#hider2').stop().animate({opacity:0}, 100);
+        	$('#footerwrap').css("z-index" , "90");
+			$('#hider2').css("z-index" , "90");
+		}
+	});
 	
-	<style>
-		* {margin:0; padding:0; }
-		a {text-decoration:none; color:#333; }
-		li {list-style:none; }
- 	</style>
+	$(window).scroll(function(){
+		var top = $(window).scrollTop();
+		
+		$("#content .back1 img").css("top", +top*0.8 +400);
+		$("#content .back2 img").css("top", +top*0.8 +400);
+	});
+	
+	
+ </script>
 </head>
 <body>
 	<div id="skipNav" class="hide">
@@ -29,227 +56,222 @@
 	</div><!-- //skipNav -->
 	
 	<div id="headerwrap">
+		<span id="content0" class="hide">top</span>	
+		
 		<header id="header">
-			<h1><a href="index.html"><img src="images/layout/logo.jpg" alt="MICROSOFT LOGO" /></a></h1>
-			<dl class="topmenu">
-				<dt class="hide"></dt>
-				<dd><a href="#"><img src="images/layout/cart.jpg" alt="CART" /></a></dd>
-				<dd><a href="#">Sign in</a></dd>
-			</dl>
+			<h1><a href="index.html"><img src="images/logo.jpg" alt="" /></a></h1>
 			
-			<p id="close"><img src="images/layout/close.png" alt="close" /></p>
+			<div class="topmenu">
+				<p class="search">
+					<input class="searchBox" type="text" placeholder="Search Menu" />
+					<input type="image" src="images/search.png" />
+				</p>
+				<dl>
+					<dt class="hide">topnav</dt>
+					<dd><a href="#">My Meal</a><span>0</span></dd>
+					<dd><a href="#header .topmenu dl" class="loginB">Login</a></dd>
+				</dl>
+				<fieldset class="login">
+					<legend class="hide">login</legend>
+					<p class="login01">
+						<input class="idbox" type="text" placeholder="ID or E-mail" title="Type in your ID or E-mail address here." />
+					</p>
+					<p class="login02">
+						<input class="passbox" type="password" placeholder="Password" title="Type in your password here." />
+					</p>
+					<p class="login03">
+						<label for="idcheck">Save Password</label>
+						<input type="checkbox" id="idcheck" />
+					</p>
+					<p class="login04"><a href="#">Login<br />
+						<span>Check your status and updates.</span>
+					</a></p>
+					<p class="login05"><a href="sub1.html">Become a Member<br />
+						<span>This is your change to sign up for <br />exclusive promotions and coupons <br />where you can get nowhere else!</span></a>
+					</p>
+				</fieldset>
+			</div><!-- //topmenu -->
 			
-			<nav id="nav">
-				<ul id="gnb">
-					<li class="m1 m">
-						<a href="#">Store</a>
-						<ul>
-							<li><a href="#">Microsoft Store</a></li>
-							<li><a href="#">Smart Phones</a></li>
-							<li><a href="#">Xbox 360 &amp; One</a></li>
-						</ul>
-					</li>
-					<li class="m2 m">
-						<a href="#">Explore</a>
-						<ul>
-							<li><a href="#">About Microsoft</a></li>
-							<li><a href="sub1.html">CEO Information</a></li>
-						</ul>
-					</li>
-					<li class="m3 m">
-						<a href="#">Devices</a>
-						<ul>
-							<li><a href="#">Surface Notebooks</a></li>
-							<li><a href="#">Home Desktops</a></li>
-							<li><a href="#">Office Workstations</a></li>
-							<li><a href="#">MS Exclusive Moniters</a></li>
-						</ul>
-					</li>
-					<li class="m4 m">
-						<a href="#">Software &amp; Apps</a>
-						<ul>
-							<li><a href="#">Microsoft Office 2015</a></li>
-							<li><a href="#">Windows Explorer 11</a></li>
-							<li><a href="#">Windows Media &amp; Entertainment</a></li>
-						</ul>
-					</li>
-					<li class="m5 m">
-						<a href="#">Support</a>
-						<ul>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Registeration</a></li>
-							<li><a href="#">FQA</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		</header><!-- //header -->
+		
 	</div><!-- //headerwrap -->
 	
-	<div id="members">
-		<fieldset class="login">
-			<legend class="hide">login</legend>
-			<p class="login01">
-				<input class="idbox" type="text" placeholder="ID or E-mail" title="Type in your ID or E-mail address here." />
-			</p>
-			<p class="login02">
-				<input class="passbox" type="password" placeholder="Password" title="Type in your password here." />
-			</p>
-			<p class="login03">
-				<label for="idcheck">Save Password</label>
-				<input type="checkbox" id="idcheck" />
-			</p>
-			<p class="login04"><a href="#">Login<br />
-				<span>Check your status and updates.</span>
-			</a></p>
-			<p class="login05"><a href="#">Join Us!!<br />
-				<span>This is your change to sign up for... <br /><br />exclusive promotions and coupons <br />where you can get nowhere else!</span></a>
-			</p>
-			<p class="login06">
-				<img src="images/layout/welcome.jpg" alt="Welcome" />
-			</p>
-		</fieldset>
-	</div>
-		
-	<div id="members_cart">
-		<div class="cart">
-			<ul>
-				<li class="closecart"><img src="images/layout/arrow1.png" alt="close" /></li>
-				<li class="cart1">Cart<span>0</span></li>
-				<li class="cart2">Wishlist<span>0</span></li>
-				<li><a href="#">My Products</a></li>
-			</ul>
-			<ul class="mycart">
-				<li><strong>My Cart</strong></li>
-				<li>Currently listed : </li>
-				<li><em>0</em>Item(s)</li>
-				<li>Edit list</li>
-				<li><img src="images/layout/between.jpg" alt="" /></li>
-				<li>Empty</li>
-				<li>Checkout</li>
-			</ul>
-			<ul class="wishlist">
-				<li><strong>Wishlist</strong></li>
-				<li>Currently listed : </li>
-				<li><em>0</em>Item(s)</li>
-				<li>Edit list</li>
-				<li><img src="images/layout/between.jpg" alt="" /></li>
-				<li>Empty</li>
-				<li>Add to cart</li>
-			</ul>
-		</div>
-	</div>
-	
-	<div id="visualwrap">
-		<section id="visual"></section>
-	</div><!-- //visualwrap -->
 	
 	<div id="container">
-		<div id="menu">
-			<div class="leftmenu">
-				<dl>
-					<dt>About Us</dt>
-					<dd><a href="#">Brand Story</a></dd>
-					<dd><a href="#">Company Philosophy</a></dd>
-					<dd><a href="#"><em>CEO Information</em></a></dd>
-					<dd><a href="#">R&amp;D</a></dd>
-					<dd><a href="#">Facitilities and Branches</a></dd>
-					<dd><a href="#">Invester Relations</a></dd>
-					<dd><a href="#">Internal Audit</a></dd>
-					<dd><a href="#">Awards</a></dd>
-				</dl>
-			</div><!-- //leftmenu -->
-			<div class="submenu">
-				<ul>
-					<li><a href="index.html">Home</a> ></li>
-					<li><a href="#">About Us</a> ></li>
-					<li><em>CEO Information</em></li>
-				</ul>
-			</div><!-- //submenu -->
-		</div><!-- //menu -->
 		
 		<section id="content">
-			<p><img src="images/sub/slogan2.png" alt="slogan" /></p>
-			<p class="ceoimg">background</p>
-			<h3>CEO Information</h3>
-			<dl>
-				<dt>
-					&#34;Our industry does not respect<br />
-					tradition - it only respects innovation.&#34;
-				</dt>
-				<dd>Satya Nadella is Chief Executive Officer of Microsoft. Before being named CEO on February 4, 2014, Nadella held leadership roles in both enterprise and consumer businesses across the company.</dd>
-				<dd>After joining Microsoft in 1992, Nadella quickly became known within the company as a leader who could span a breadth of technologies and businesses to transform some of Microsoft’s biggest product offerings.</dd>
-				<dd>Prior to his role as CEO, Nadella was executive vice president of Microsoft’s Cloud and Enterprise group, one of the company’s fastest-growing and most profitable businesses. While Nadella was there, the group’s revenue increased by 22 percent, and its profits by 33 percent. Previously, Nadella led R&D for the Online Services Division, guiding the development of one of the largest cloud infrastructures in the world, to support products including Bing, Xbox and Office.</dd>
-				<dd>Before joining Microsoft, Nadella was a member of the technology staff at Sun Microsystems.</dd>
-				<dd>As Microsoft’s third CEO (succeeding Steve Ballmer and Bill Gates), Satya Nadella brings a relentless drive for innovation and a spirit of collaboration to the role. He says he joined Microsoft 22 years ago because he saw how clearly Microsoft empowers people to do magical things and ultimately make the world a better place. Many companies, he explains, “aspire to change the world. But very few have all the elements required: talent, resources and perseverance. Microsoft has proven that it has all three in abundance.”</dd>
-			</dl>
+			<p class="vis"><img src="images/signup2.jpg" alt="" /></p>
+			<p class="back1"><img src="images/background1.png" alt="" /></p>
+			<p class="back2"><img src="images/background2.png" alt="" /></p>
 			
-		</section>
+			<div id="account">
+				<h2>Sign Up for McDonalds Now!</h2>
+				<h4>And exclusive coupons and offers or other information from McDonalds.</h4>
+				<h3>Account Information</h3>
+				<form action="" method="" name="">
+					<fieldset>
+						
+						<p class="text">
+							<label for="id">Username</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="text">
+							<label for="id">Password</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="text">
+							<label for="id">Confirm Password</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="text">
+							<label for="id">E-mail</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="text">
+							<label for="id">Confirm E-mail</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						
+						<p class="file">
+							<label for="">Profile Picture</label>
+							<input type="file" id="" name="" value="" />
+						</p>
+						
+					</fieldset>
+				</form>
+			</div><!-- //account -->
+			
+			<div id="personal">
+				<h3>Personal Information</h3>
+				<form action="" method="" name="">
+					<fieldset>
+						
+						<p class="text">
+							<label for="id">First Name</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="text">
+							<label for="id">Last Name</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="radio">
+							<label for="">Male</label>
+							<input type="radio" id="" name="sex" value="" checked="checked" />
+							<label for="">Female</label>
+							<input type="radio" id="" name="sex" value="" />
+						</p>
+						
+						<p class="text">
+							<label for="id">Phone</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="option">
+							<label for="">Country</label>
+							<select id="" name="">
+								<option value="" selected="selected">Select</option>
+								<option value="">United States</option>
+							</select>
+						</p>
+						<p class="text">
+							<label for="id">Address 1</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="text">
+							<label for="id">Address 2</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="text">
+							<label for="id">City</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						<p class="option">
+							<label for="">State</label>
+							<select id="" name="">
+								<option value="" selected="selected">Select</option>
+								<option value="">AL</option>
+								<option value="">AK</option>
+								<option value="">AZ</option>
+								<option value="">AR</option>
+								<option value="">CA</option>
+								<option value="">CO</option>
+							</select>
+						</p>
+						<p class="text">
+							<label for="id">Zip Code</label>
+							<input type="text" id="id" name="value" maxlength="10" size="20" title="아이디 입력" />
+						</p>
+						
+						
+						
+						
+						<p class="check">
+							<label for="login">Newsletter</label>
+							<input type="checkbox" id="login" name="" value="" title="Leave it unchecked if you do not wish to receive any E-mails!" />
+						</p>
+						<p class="check">
+							<label for="login">SMS</label>
+							<input type="checkbox" id="login" name="" value="" title="Leave it unchecked if you do not wish to receive any text messages!" />
+						</p>
+						
+						<p class="information">
+							<label for="self">Information</label>
+							<textarea cols="40" rows="5" name="" id="self"></textarea>
+						</p>
+					</fieldset>
+				</form>
+				<p class="finish"><a href="#">Sign Me Up!</a></p>
+			</div><!-- //personal -->
+			
+		</section><!-- //content -->
+		
 	</div><!-- //container -->
 	
+	
 	<div id="footerwrap">
-		<footer id="footer">
-			<ul>
+		<footer id="footer2">
+			<ul class="fmenu">
 				<li>
-					<a href="#">More Product Sites</a>
-					<ul>
-						<li><a href="#">Windows</a></li>
-						<li><a href="#">Office</a></li>
-						<li><a href="#">Surface</a></li>
-						<li><a href="#">Windows Phone</a></li>
-						<li><a href="#">Xbox</a></li>
-						<li><a href="#">Skype</a></li>
-						<li><a href="#">MSN</a></li>
-						<li><a href="#">Microsoft Store</a></li>
-					</ul>
+					<a href="#">
+						<em>About McDonalds</em><br />
+						<span>McDonalds is one of the most <br />popular hamburgers in the world <br />that would satisfy anyone.</span>
+					</a>
 				</li>
 				<li>
-					<a href="#">Who We Are</a>
-					<ul>
-						<li><a href="#">Where to buy</a></li>
-						<li><a href="#">Awards</a></li>
-						<li><a href="#">Latest News</a></li>
-						<li><a href="#">About Microsoft</a></li>
-						<li><a href="#">Employment</a></li>
-						<li><a href="#">Press Room</a></li>
-					</ul>
+					<a href="#">
+						<em>Careers</em><br />
+						<span>McDonalds is hiring to work <br />for a company that values <br />inspiration and creativeness.</span>
+					</a>
 				</li>
 				<li>
-					<a href="#">Need Assistance?</a>
-					<ul>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Microsoft Store</a></li>
-						<li><a href="#">Commercial</a></li>
-						<li><a href="#">Product Registration</a></li>
-						<li>Monday to Friday from 9:00 to 18:00</li>
-					</ul>
+					<a href="#">
+						<em>Franchise</em><br />
+						<span>Find out more about how you can <br />open your very own McDonalds!</span>
+					</a>
 				</li>
-				<li class="last">
-					<a href="#">Community</a>
-					<ul>
-						<li><a href="#"><img src="images/layout/sns1.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="images/layout/sns2.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="images/layout/sns3.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="images/layout/sns4.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="images/layout/sns5.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="images/layout/sns6.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="images/layout/sns7.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="images/layout/sns8.jpg" alt="" /></a></li>
-					</ul>
+				<li>
+					<a href="#">
+						<em>Foundation</em><br />
+						<span>Our foundation is working in <br />the communities to end war and <br />prolong peace among all nations.</span>
+					</a>
 				</li>
 			</ul>
+			
 		</footer>
 	</div><!-- //footerwrap -->
-	<div id="address">
-		<p>Shop at the Microsoft Online Store (1-800-MICROSOFT), visit a Microsoft Retail Store, or find a reseller.<br />Copyright &#169; 2015 Microsoft corp. All rights reserved.</p>
-		<ul>
-			<li><a href="sub1.html">About Microsoft</a></li>
-			<li class="between"><a href="#">Sitemap</a></li>
-			<li class="between"><a href="#">Terms of Use</a></li>
-			<li class="between"><a href="#"><img src="images/layout/flag.jpg" alt="" /></a></li>
-		</ul>
-	</div>
+	
 
+	<div id="hider2">
+		<ul class="fnav">
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Corporate Responsibility</a></li>
+			<li><a href="#">McDonalds Worldwide</a></li>
+			<li><a href="#">Site Map</a></li>
+			<li><a href="#">Press Center</a></li>
+		</ul>
+		<address>&#169; 2010-2015 McDonald's. All Rights Reserved.</address>
+		<p class="back"><a href="">Go to top <img src="images/backtop.png" alt="" /></a></p>
+	</div>
+	
 </body>
 </html>
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" /> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>CJK Project #3</title>
+	<title>CJK Project #2</title>
 	<meta name="viewport" content="width=device-width, initial-scale=0.1">
 	<meta name="author" content="Chongjun Kim" />
 	<link rel="shortcut icon" href="img/favicon_1.ico">
@@ -16,12 +16,13 @@
 	<script type="text/javascript" src="js/jquery.js"> </script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"> </script>
 	<script type="text/javascript" src="js/action.js"> </script>
-	
+		
 	<style>
 		* {margin:0; padding:0; }
 		a {text-decoration:none; color:#333; }
 		li {list-style:none; }
- 	</style>
+	 </style> 
+
 </head>
 <body>
 	<div id="skipNav" class="hide">
@@ -29,410 +30,520 @@
 	</div><!-- //skipNav -->
 	
 	<div id="headerwrap">
+		<span id="content0" class="hide">top</span>	
+		
 		<header id="header">
-			<h1><a href="index.html"><img src="images/layout/logo.jpg" alt="MICROSOFT LOGO" /></a></h1>
-			<dl class="topmenu">
-				<dt class="hide"></dt>
-				<dd><a href="#"><img src="images/layout/cart.jpg" alt="CART" /></a></dd>
-				<dd><a href="#">Sign in</a></dd>
-			</dl>
+			<h1><a href="index.html"><img src="images/logo.jpg" alt="" /></a></h1>
 			
-			<p id="close"><img src="images/layout/close.png" alt="close" /></p>
+			<div class="topmenu">
+				<p class="search">
+					<input class="searchBox" type="text" placeholder="Search Menu" />
+					<input type="image" src="images/search.png" />
+				</p>
+				<dl>
+					<dt class="hide">topnav</dt>
+					<dd><a href="#" class="home">Home</a></dd>
+					<dd><a href="#header .topmenu dl" class="loginB">Login</a></dd>
+				</dl>
+				<fieldset class="login">
+					<legend class="hide">login</legend>
+					<p class="login01">
+						<input class="idbox" type="text" placeholder="ID or E-mail" title="Type in your ID or E-mail address here." />
+					</p>
+					<p class="login02">
+						<input class="passbox" type="password" placeholder="Password" title="Type in your password here." />
+					</p>
+					<p class="login03">
+						<label for="idcheck">Save Password</label>
+						<input type="checkbox" id="idcheck" />
+					</p>
+					<p class="login04"><a href="#">Login<br />
+						<span>Check your status and updates.</span>
+					</a></p>
+					<p class="login05"><a href="sub1.html">Become a Member<br />
+						<span>This is your change to sign up for <br />exclusive promotions and coupons <br />where you can get nowhere else!</span></a>
+					</p>
+				</fieldset>
+				<p class="closelogin"><img src="images/closelogin.png" alt="close" /></p>
+			</div><!-- //topmenu -->
 			
 			<nav id="nav">
-				<ul id="gnb">
-					<li class="m1 m">
-						<a href="#">Store</a>
-						<ul>
-							<li><a href="#">Microsoft Store</a></li>
-							<li><a href="#">Smart Phones</a></li>
-							<li><a href="#">Xbox 360 &amp; One</a></li>
-						</ul>
-					</li>
-					<li class="m2 m">
-						<a href="#">Explore</a>
-						<ul>
-							<li><a href="#">About Microsoft</a></li>
-							<li><a href="sub1.html">CEO Information</a></li>
-						</ul>
-					</li>
-					<li class="m3 m">
-						<a href="#">Devices</a>
-						<ul>
-							<li><a href="#">Surface Notebooks</a></li>
-							<li><a href="#">Home Desktops</a></li>
-							<li><a href="#">Office Workstations</a></li>
-							<li><a href="#">MS Exclusive Moniters</a></li>
-						</ul>
-					</li>
-					<li class="m4 m">
-						<a href="#">Software &amp; Apps</a>
-						<ul>
-							<li><a href="#">Microsoft Office 2015</a></li>
-							<li><a href="#">Windows Explorer 11</a></li>
-							<li><a href="#">Windows Media &amp; Entertainment</a></li>
-						</ul>
-					</li>
-					<li class="m5 m">
-						<a href="#">Support</a>
-						<ul>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Registeration</a></li>
-							<li><a href="#">FQA</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
+					<ul id="gnb">
+						<li class="m1 m">
+							<ul>
+								<li class="mm"><a href="#gnb .m">Menu</a></li>
+								
+								<li class="mmm menu1"><a href="#">Best Sellers</a></li>
+								<li class="mmm menu2"><a href="#">Favorites</a></li>
+								<li class="mmm menu3"><a href="#">Burgers</a></li>
+								<li class="mmm menu4"><a href="#">Breakfast</a></li>
+								<li class="mmm menu5"><a href="#">Salads</a></li>
+								<li class="mmm menu6"><a href="#">Happy Meal</a></li>
+							</ul>
+						</li>
+						<li class="m2 m">
+							<ul>
+								<li class="mm"><a href="#gnb .m">Our Story</a></li>
+								
+								<li class="mmm story1"><a href="#">McHistory</a></li>
+								<li class="mmm story2"><a href="#">News</a></li>
+								<li class="mmm story3"><a href="#">Company</a></li>
+							</ul>
+						</li>
+						<li class="m3 m">
+							<ul>
+								<li class="mm"><a href="#gnb .m">Careers</a></li>
+								
+								<li class="mmm career1"><a href="#">Starting a Career</a></li>
+								<li class="mmm career2"><a href="#">Training &amp; Education</a></li>
+								<li class="mmm career3"><a href="#">Benefits</a></li>
+							</ul>
+						</li>
+						<li class="m5 m">
+							<ul>
+								<li class="mm"><a href="#gnb .m">Services</a></li>
+								
+								<li class="mmm service1"><a href="#">Free Wifi</a></li>
+								<li class="mmm service2"><a href="#">SNS Events</a></li>
+								<li class="mmm service3"><a href="#">Subscriptions</a></li>
+							</ul>
+						</li>
+						<li class="m5 m">
+							<ul>
+								<li class="mm"><a href="#gnb .m">Location</a></li>
+								
+								<li class="mmm location1"><a href="#">Locator</a></li>
+								<li class="mmm location2"><a href="#">Map</a></li>
+							</ul>
+						</li>
+					</ul>
+					<p class="img"><img src="images/menumain.png" alt="" id="preview"/></p>
+			</nav><!-- //nav -->
+		</header><!-- //header -->
 	</div><!-- //headerwrap -->
-	
-	<div id="members">
-		<fieldset class="login">
-			<legend class="hide">login</legend>
-			<p class="login01">
-				<input class="idbox" type="text" placeholder="ID or E-mail" title="Type in your ID or E-mail address here." />
-			</p>
-			<p class="login02">
-				<input class="passbox" type="password" placeholder="Password" title="Type in your password here." />
-			</p>
-			<p class="login03">
-				<label for="idcheck">Save Password</label>
-				<input type="checkbox" id="idcheck" />
-			</p>
-			<p class="login04"><a href="#">Login<br />
-				<span>Check your status and updates.</span>
-			</a></p>
-			<p class="login05"><a href="#">Join Us!!<br />
-				<span>This is your change to sign up for... <br /><br />exclusive promotions and coupons <br />where you can get nowhere else!</span></a>
-			</p>
-			<p class="login06">
-				<img src="images/layout/welcome.jpg" alt="Welcome" />
-			</p>
-		</fieldset>
-	</div>
-		
-	<div id="members_cart">
-		<div class="cart">
-			<ul>
-				<li class="closecart"><img src="images/layout/arrow1.png" alt="close" /></li>
-				<li class="cart1">Cart<span>0</span></li>
-				<li class="cart2">Wishlist<span>0</span></li>
-				<li><a href="#">My Products</a></li>
-			</ul>
-			<ul class="mycart">
-				<li><strong>My Cart</strong></li>
-				<li>Currently listed : </li>
-				<li><em>0</em>Item(s)</li>
-				<li>Edit list</li>
-				<li><img src="images/layout/between.jpg" alt="" /></li>
-				<li>Empty</li>
-				<li>Checkout</li>
-			</ul>
-			<ul class="wishlist">
-				<li><strong>Wishlist</strong></li>
-				<li>Currently listed : </li>
-				<li><em>0</em>Item(s)</li>
-				<li>Edit list</li>
-				<li><img src="images/layout/between.jpg" alt="" /></li>
-				<li>Empty</li>
-				<li>Add to cart</li>
-			</ul>
-		</div>
-	</div>
 	
 	<div id="visualwrap">
 		<section id="visual">
-			<div class="imgView">
-				<ul>
-					<li class="imgText1">
-						<!-- 
-						<span>
-							<a href="#">Visit Microsoft Store</a>
-						</span>
-						 -->
-					</li>
-					<li class="imgText2">
-						<span>
-							<em>Introducing our new line-up.</em><br />
-							Our latest products are the best in the current market.<br />
-							Take a look at the finest product line-up.<br />
-							<strong><a href="#">Learn More</a></strong>
-						</span>
-					</li>
-					<li class="imgText3">
-						<span>
-							<em>Introducing our new CEO.</em><br />
-							The new CEO Satya Nadella shows us the future.<br />
-							His relationship with Microsoft is ever-lasting.<br />
-							<strong><a href="sub1.html">Learn More</a></strong>
-						</span>
-					</li>
-					<li class="imgText4">
-						<span>
-							<em>Introducing our new CEO.</em><br />
-							The new CEO Satya Nadella shows us the future.<br />
-							His relationship with Microsoft is ever-lasting.<br />
-							<strong><a href="sub1.html">Learn More</a></strong>
-						</span>
-					</li>
-					<li class="imgText5">
-						<!-- 
-						<span>
-							<a href="#">Visit Microsoft Store</a>
-						</span>
-						 -->
-					</li>
-				</ul>
-			</div>
-			
-			<ul class="imgList">
-				<li class="on">ON</li>
-				<li>OFF</li>
-				<li>OFF</li>
-				<li>OFF</li>
-			</ul>
-			
+			<p class="img"><img src="images/visual.jpg" alt="" /></p>
+			<p class="text">We only<br />serve<br />happiness.</p>
+			<p class="link"><a href="#content1">Click to Explore!</a></p>
 		</section><!-- //visual -->
 	</div><!-- //visualwrap -->
 	
 	<div id="container">
 		<section id="content">
-			<div class="content_top">
-				<dl>
-					<dt>Product Information</dt>
-					<span></span>
-					<a href="#content .content_top dl" class="more_m1"></a>
-					
-					<dd class="content_top1">img</dd>
-					<dd class="ctText">
-						Check out our most recent products,<br />
-						get a chance to share it with your friends.
-					</dd>
-					<dd class="more1 more">
-						<ul>
-							<li class="mm1"><a href="#content .content_top .more">Windows</a></li>
-							<li class="mm1"><a href="#content .content_top .more">MS Office</a></li>
-							<li class="mm1"><a href="#content .content_top .more">Surface Pro</a></li>
-							<li class="mm1"><a href="#content .content_top .more">Xbox &amp; Games</a></li>
-							<li><a href="#content .content_top .more">More...</a></li>
+			<div id="content1" class="c1 c">
+				<h2>
+					<strong>Have Fun<br /><em>With McDonalds</em></strong><br />
+					<span>Choose a picture to see more</span>
+				</h2>
+				<p class="left"><img src="images/c1left.png" alt="" /></p>
+				<p class="right"><img src="images/c1right.png" alt="" /></p>
+				<ul class="cimg">
+					<li><a href="#"><img src="images/c101.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/c102.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/c103.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/c104.jpg" alt="" /></a></li>
+				</ul>
+				
+				<div class="bg"></div>
+				<div class="c1010 cpop">
+					<article>
+						<img src="images/c1010.png" alt="" />
+						<p>
+							<em>Burgers &amp; Sandwiches</em><br />
+							Delicious, freshly made, and oh-so-satisfying. From the Big Mac to our Premium Grilled Chicken Club to our classic Cheeseburger, McDonald’s sandwiches make the meal.
+						</p>
+						<ul class="cimgsmall">
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1012.png" alt="" />Quarter Pounder with Cheese</a></li>
+							<li><a href="#"><img src="images/c1013.png" alt="" />Bacon Clubhouse Burger</a></li>
+							<li><a href="#"><img src="images/c1014.png" alt="" />Double Quarter Pounder with Cheese</a></li>
+							<li><a href="#"><img src="images/c1015.png" alt="" />Premium Buttermilk Crispy Chicken Bacon Clubhouse Sandwich</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
 						</ul>
-					</dd>
-				</dl>
-				<dl>
-					<dt>Notice / Release</dt>
-					<span></span>
-					<a href="#content .content_top dl" class="more_m2"></a>
-					
-					<dd class="content_top2">img</dd>
-					<dd class="ctText">
-						Everything you need to know,<br />
-						regarding our latest news and activities.
-					</dd>
-					<dd class="more2 more">
-						<ul>
-							<li class="mm2"><a href="#content .content_top .more">Latest News</a></li>
-							<li class="mm2"><a href="#content .content_top .more">New Releases</a></li>
-							<li class="mm2"><a href="#content .content_top .more">Windows Update</a></li>
-							<li class="mm2"><a href="#content .content_top .more">Announcements</a></li>
-							<li><a href="#content .content_top .more">More...</a></li>
+					</article>
+					<a href="#content1 ul li" class="cclose"><img src="images/close.png" alt="close" /></a>
+				</div><!-- //c1010 -->
+				
+				<div class="c1020 cpop">
+					<article>
+						<img src="images/c1020.png" alt="" />
+						<p>
+							<em>Favorites Under 400</em><br />
+							Who knew so much taste had so few calories? With so many national menu items under 400 calories*, you can enjoy some of your all-time favorites like the Egg McMuffin or the classic Filet-O-Fish. No, really – enjoy!
+						</p>
+						<ul class="cimgsmall">
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1012.png" alt="" />Quarter Pounder with Cheese</a></li>
+							<li><a href="#"><img src="images/c1013.png" alt="" />Bacon Clubhouse Burger</a></li>
+							<li><a href="#"><img src="images/c1014.png" alt="" />Double Quarter Pounder with Cheese</a></li>
+							<li><a href="#"><img src="images/c1015.png" alt="" />Premium Buttermilk Crispy Chicken Bacon Clubhouse Sandwich</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
 						</ul>
-					</dd>
-				</dl>
-				<dl>
-					<dt>Career &amp; Programs</dt>
-					<span></span>
-					<a href="#content .content_top dl" class="more_m3"></a>
-					
-					<dd class="content_top3">img</dd>
-					<dd class="ctText">
-						If you dream of joining our family<br />
-						now is the time to apply!
-					</dd>
-					<dd class="more3 more">
-						<ul>
-							<li class="mm3"><a href="#content .content_top .more">Find a Job</a></li>
-							<li class="mm3"><a href="#content .content_top .more">Working at Microsoft</a></li>
-							<li class="mm3"><a href="#content .content_top .more">Students &amp; Graduates</a></li>
-							<li class="mm3"><a href="#content .content_top .more">Special Programs</a></li>
-							<li><a href="#content .content_top .more">More...</a></li>
+					</article>
+					<a href="#content1 ul li" class="cclose"><img src="images/close.png" alt="close" /></a>
+				</div><!-- //c1020 -->
+				
+				<div class="c1030 cpop">
+					<article>
+						<img src="images/c1030.png" alt="" />
+						<p>
+							<em>Breakfast</em><br />
+							With so many options, mornings have never been tastier. From wholesome choices like Fruit &amp; Maple Oatmeal and the Egg White Delight McMuffin to the savory Sausage Biscuit to the sweet McGriddles sandwich, you'll find exactly what you need to start your morning off just right.
+						</p>
+						<ul class="cimgsmall">
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1012.png" alt="" />Quarter Pounder with Cheese</a></li>
+							<li><a href="#"><img src="images/c1013.png" alt="" />Bacon Clubhouse Burger</a></li>
+							<li><a href="#"><img src="images/c1014.png" alt="" />Double Quarter Pounder with Cheese</a></li>
+							<li><a href="#"><img src="images/c1015.png" alt="" />Premium Buttermilk Crispy Chicken Bacon Clubhouse Sandwich</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
 						</ul>
-					</dd>
-				</dl>
-				<dl>
-					<dt>Social Contribution</dt>
-					<span></span>
-					<a href="#content .content_top dl" class="more_m4"></a>
-					
-					<dd class="content_top4">img</dd>
-					<dd class="ctText">
-						Not only providing service to customers,<br />
-						but also to the society where it's needed.
-					</dd>
-					<dd class="more4 more">
-						<ul>
-							<li class="mm4"><a href="#content .content_top .more">Contribution History</a></li>
-							<li class="mm4"><a href="#content .content_top .more">Product Contribution</a></li>
-							<li class="mm4"><a href="#content .content_top .more">Our Research</a></li>
-							<li class="mm4"><a href="#content .content_top .more">Connections</a></li>
-							<li><a href="#content .content_top .more">More...</a></li>
+					</article>
+					<a href="#content1 ul li" class="cclose"><img src="images/close.png" alt="close" /></a>
+				</div><!-- //c1030 -->
+				
+				<div class="c1040 cpop">
+					<article>
+						<img src="images/c1040.png" alt="" />
+						<p>
+							<em>Salads</em><br />
+							Can a salad be classy? We say yes. Add a little panache to your day with select mixed greens, elegant toppings, and choices galore.
+						</p>
+						<ul class="cimgsmall">
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1012.png" alt="" />Quarter Pounder with Cheese</a></li>
+							<li><a href="#"><img src="images/c1013.png" alt="" />Bacon Clubhouse Burger</a></li>
+							<li><a href="#"><img src="images/c1014.png" alt="" />Double Quarter Pounder with Cheese</a></li>
+							<li><a href="#"><img src="images/c1015.png" alt="" />Premium Buttermilk Crispy Chicken Bacon Clubhouse Sandwich</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
+							<li><a href="#"><img src="images/c1011.png" alt="" />Big Mac</a></li>
 						</ul>
-					</dd>
-				</dl>
-			</div><!-- //content_top -->
+					</article>
+					<a href="#content1 ul li" class="cclose"><img src="images/close.png" alt="close" /></a>
+				</div><!-- //c1040 -->
+				
+			</div><!-- //content1 -->
 			
-			<div class="content_mid">
-				<p>Recommended for you</p>
-				<p>For Home &amp; Office</p>
-				<p>Enjoy our products that are<br />made exclusively for your home<br />as well as your office.</p>
-				<div id="slide">
-					<ul>
-						<li class="mp mp1"><a href="#content .content_mid">
-							<img src="images/main/mid01.jpg" alt=""  class="mpimg"/>
-							<div class="info">
-								<h3>Office 365</h3>
-								<span>Buy Office 365 and <br />get OneDrive 1TB storage</span>
-							</div><!-- //info -->
-						</a></li>
-						<li class="mp mp2"><a href="#content .content_mid">
-							<img src="images/main/mid02.jpg" alt=""  class="mpimg"/>
-							<div class="info">
-								<h3>Xbox Live</h3>
-								<span>Enjoy the best gaming experience</span>
-							</div>
-						</a></li>
-						<li class="mp mp3"><a href="#content .content_mid">
-							<img src="images/main/mid03.jpg" alt=""  class="mpimg"/>
-							<div class="info">
-								<h3>Smart Phone</h3>
-								<span>Be connected to everything <br /> from within your hands</span>
-							</div>
-						</a></li>
-						<li class="mp mp4"><a href="#content .content_mid">
-							<img src="images/main/mid04.jpg" alt=""  class="mpimg"/>
-							<div class="info">
-								<h3>MSN</h3>
-								<span>World news and events <br />... and everything</span>
-							</div>
-						</a></li>
-						<li class="mp mp5"><a href="#content .content_mid">
-							<img src="images/main/mid05.jpg" alt=""  class="mpimg"/>
-							<div class="info">
-								<h3>Surface</h3>
-								<span>Access everything with only your finger tips</span>
-							</div>
-						</a></li>
-						<li class="mp mp6"><a href="#content .content_mid">
-							<img src="images/main/mid06.jpg" alt=""  class="mpimg"/>
-							<div class="info">
-								<h3>Skype</h3>
-								<span>World's best communication<br />tool for everyone.</span>
-							</div>
-						</a></li>
-						<li class="mp mp7"><a href="#content .content_mid">
-							<img src="images/main/mid07.jpg" alt=""  class="mpimg"/>
-							<div class="info">
-								<h3>Bing</h3>
-								<span>Get used to the most powerful search engnine</span>
-							</div>
-						</a></li>
-						<li class="mp mp8"><a href="#content .content_mid">
-							<img src="images/main/mid08.jpg" alt=""  class="mpimg"/>
-							<div class="info">
-								<h3>Microsoft Store</h3>
-								<span>Visit a Microsoft Store near you and get great deals!</span>
-							</div>
-						</a></li>
-					</ul>
-				</div>
-				<div id="slidearrow">
-					<ul>
-						<li class="prev"><img src="images/main/prev.jpg" alt="" /></li>
-						<li class="next"><img src="images/main/next.jpg" alt="" /></li>
-					</ul>
-				</div>
-			</div><!-- //content_mid -->
-			<div class="content_bottom">
+			
+			
+			<div id="content2" class="c2 c">
+				<h2>
+					<em>All Shakes Free With Set Menus!</em><br />
+					<span>Through the end of summer at McDonalds.</span><br />
+					<a href="#">See More Information</a>
+				</h2>
 				<ul>
-					<li><a href="#content .content_bottom">
-							<img src="images/main/contact.jpg" alt="" />
-							<span><em>Contact Us</em><br />Contact us for the best customer service.</span>
-						</a>
-					</li>
+					<li><a href=""><img src="images/c2_1.png" alt="" /></a></li>
+					<li><a href=""><img src="images/c2_2.png" alt="" /></a></li>
+					<li><a href=""><img src="images/c2_4.png" alt="" /></a></li>
+					<li><a href=""><img src="images/c2_3.png" alt="" /></a></li>
 				</ul>
-				<ul>
-					<li><a href="#content .content_bottom">
-							<img src="images/main/register.jpg" alt="" />
-							<span><em>Registration</em><br />Register your product to recieve full coverage.</span>
-						</a>
-					</li>
+				
+				<div class="bg"></div>
+				<div class="c201 cpop">
+					<article>
+						<iframe id="summer" width="854" height="510" src="" frameborder="0" allowfullscreen></iframe>
+						<p class="load">Loading...</p>
+					</article>
+					<a href="#content2 h2 a" class="cclose2">CLOSE</a>
+				</div><!-- //c1010 -->
+				
+			</div><!-- //content2 -->
+			
+			
+			
+			<div id="content3" class="c3 c">
+				<p><img src="images/c3.png" alt="" /></p>
+				<ul class="signup">
+					<li>Welcome to the McClub!</li>
+					<li>News Promos Coupons Inspiration</li>
+					<li><input text="" placeholder="Enter E-mail Address"></li>
+					<li>By signing up for the McClub, you are varifying that you are the age of 13.</li>
+					<li class="imin"><a href="#content3 ul li">I'm In</a></li>
 				</ul>
-			</div>
-		</section>
+			</div><!-- //content3 -->
+			
+			
+			
+			<div id="content4" class="c4 c">
+				<div class="cover">
+					<p>Click to see more</p>
+				</div>
+				<div class="allsns">
+					<div class="fb sns">
+						<p><img src="images/logo_fb.png" alt="" /></p>
+						<ul class="fbinside">
+							<li>
+								<a href="#">
+									<h4><img src="images/fb1.jpg" alt="" /></h4>
+									<span><em>McDonald's Official</em><br />
+										16 April, 2015<br />
+									</span>
+									<img src="images/like.jpg" alt="" class="likeit" />
+								</a>
+								<p>TGIF! Welcome the weekend with these new sweet treats wink. Now available at Dessert Kiosks, 
+									for a limited time only. Find out more at the dessert corner!</p>
+							</li>
+							<li>
+								<a href="#">
+									<h4><img src="images/fb2.jpg" alt="" /></h4>
+									<span><em>McDonald's Official</em><br />
+										13 April, 2015<br />
+									</span>
+									<img src="images/like.jpg" alt="" class="likeit" />
+								</a>
+								<p>Our $3 Grab &amp; Go breakfast sets contain fewer than 500 calories* each. 
+									So you won’t bust both your budget and calorie limits. Talk about getting your day off ...</p>
+							</li>
+							<li>
+								<a href="#">
+									<h4><img src="images/fb3.jpg" alt="" /></h4>
+									<span><em>McDonald's Official</em><br />
+										01 April, 2015<br />
+									</span>
+									<img src="images/like.jpg" alt="" class="likeit" />
+								</a>
+								<p>Dive into the latest addition to the McWraps family! Featuring quality white fish from Alaska, 
+									a medley of crunchy vegetables drizzled with Thai chilli sauce and wrapped ...</p>
+							</li>
+							<li>
+								<a href="#">
+									<h4><img src="images/fb1.jpg" alt="" /></h4>
+									<span><em>McDonald's Official</em><br />
+										16 April, 2015<br />
+									</span>
+									<img src="images/like.jpg" alt="" class="likeit" />
+								</a>
+								<p>TGIF! Welcome the weekend with these new sweet treats wink. Now available at Dessert Kiosks, 
+									for a limited time only. Find out more at the dessert corner!</p>
+							</li>
+							<li>
+								<a href="#">
+									<h4><img src="images/fb2.jpg" alt="" /></h4>
+									<span><em>McDonald's Official</em><br />
+										13 April, 2015<br />
+									</span>
+									<img src="images/like.jpg" alt="" class="likeit" />
+								</a>
+								<p>Our $3 Grab &amp; Go breakfast sets contain fewer than 500 calories* each. 
+									So you won’t bust both your budget and calorie limits. Talk about getting your day off ...</p>
+							</li>
+							<li>
+								<a href="#">
+									<h4><img src="images/fb3.jpg" alt="" /></h4>
+									<span><em>McDonald's Official</em><br />
+										01 April, 2015<br />
+									</span>
+									<img src="images/like.jpg" alt="" class="likeit" />
+								</a>
+								<p>Dive into the latest addition to the McWraps family! Featuring quality white fish from Alaska, 
+									a medley of crunchy vegetables drizzled with Thai chilli sauce and wrapped ...</p>
+							</li>
+						</ul>
+						<p class="like l1"><a href="https://www.facebook.com/mcdsg" target="blank">Like Us</a></p>
+					</div>
+					
+					<div class="tw sns">
+						<p><img src="images/logo_tw.png" alt="" /></p>
+						<ul class="twinside">
+							<li>
+								<h5><em>McDonald's</em> @McDonalds</h5>
+								<span>Herbs, spices and lots of Lovin’. Introducing our new Artisan Grilled Chicken.
+								</span><br />
+								<span class="date">2015-04-09</span><br />
+							</li>
+							<li>
+								<h5><em>McDonald's</em> @McDonalds</h5>
+								<span>All men must dine. <a href="#">#GoTSeason5</a></span><br />
+								<span class="date">2015-04-12</span>
+							</li>
+							<li>
+								<h5><em>McDonald's</em> @McDonalds</h5>
+								<span>The only poolside with a front row view. <a href="#">@kendalljenner</a>  &amp; <a href="#">@GiGiHadid watching</a>  <a href="#">@codysimpson</a>  on the stage.</span><br />
+								<span class="date">2015-04-11</span>
+							</li>
+							<li>
+								<h5><em>McDonald's</em> @McDonalds</h5>
+								<span>Golden fries with that golden dress—We're Lovin' it <a href="#">@ParisHilton</a>.</span><br />
+								<span class="date">2015-04-11</span>
+							</li>
+							<li>
+								<h5><em>McDonald's</em> @McDonalds</h5>
+								<span>Herbs, spices and lots of Lovin’. Introducing our new Artisan Grilled Chicken.
+								</span><br />
+								<span class="date">2015-04-09</span><br />
+							</li>
+							<li>
+								<h5><em>McDonald's</em> @McDonalds</h5>
+								<span>All men must dine. <a href="#">#GoTSeason5</a></span><br />
+								<span class="date">2015-04-12</span>
+							</li>
+							<li>
+								<h5><em>McDonald's</em> @McDonalds</h5>
+								<span>The only poolside with a front row view. 
+									<a href="#">@kendalljenner</a>  &amp; <a href="#">@GiGiHadid watching</a>
+									<a href="#">@codysimpson</a>  on the stage.</span><br />
+								<span class="date">2015-04-11</span>
+							</li>
+							<li>
+								<h5><em>McDonald's</em> @McDonalds</h5>
+								<span>Golden fries with that golden dress—We're Lovin' it <a href="#">@ParisHilton</a>.</span><br />
+								<span class="date">2015-04-11</span>
+							</li>
+						</ul>
+						<p class="like l2"><a href="https://twitter.com/mcdonalds" target="blank">Follow Us</a></p>
+					</div>
+					
+					<div class="in sns">
+						<p><img src="images/logo_in.png" alt="" /></p>
+						<ul class="ininside">
+							<li>
+								<a href="#">
+									<img src="images/in1.jpg" alt="" />
+								</a>
+								<p>Even after 60 years this week, the lovin' never stops. <a href="#">#imlovinit #Anniversary</a></p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/in2.jpg" alt="" />
+								</a>
+								<p>You thinkin’ what we’re thinkin’? <a href="#">#Mmm #McCafe</a></p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/in3.jpg" alt="" />
+								</a>
+								<p>Choose lovin'. <a href="#">#WorldFamousFries</a></p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/in1.jpg" alt="" />
+								</a>
+								<p>Even after 60 years this week, the lovin' never stops. <a href="#">#imlovinit #Anniversary</a></p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/in2.jpg" alt="" />
+								</a>
+								<p>You thinkin’ what we’re thinkin’? <a href="#">#Mmm #McCafe</a></p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/in3.jpg" alt="" />
+								</a>
+								<p>Choose lovin'. <a href="#">#WorldFamousFries</a></p>
+							</li>
+						</ul>
+						<p class="like l3"><a href="https://instagram.com/mcdonalds/" target="blank">Follow Us</a></p>
+					</div>
+				</div>
+			</div><!-- //content4 -->
+			
+			
+			
+			<div id="content5" class="c5 c">
+				<ul class="map">
+					<li>Where Are You?</li>
+					<li>It is easy to find the closest McDonalds with this locator!</li>
+					<li><input text="" placeholder="Enter City, State, or Zip" /></li>
+					<li class="findnow"><a href="#content5 ul li">Find Now!</a></li>
+				</ul>
+			</div><!-- //content5 -->
+			
+		</section><!-- //content -->
+		
 	</div><!-- //container -->
 	
 	<div id="footerwrap">
 		<footer id="footer">
-			<ul>
+			<ul class="fmenu">
 				<li>
-					<a href="#footer">More Product Sites</a>
-					<ul>
-						<li><a href="#footer">Windows</a></li>
-						<li><a href="#footer">Office</a></li>
-						<li><a href="#footer">Surface</a></li>
-						<li><a href="#footer">Windows Phone</a></li>
-						<li><a href="#footer">Xbox</a></li>
-						<li><a href="#footer">Skype</a></li>
-						<li><a href="#footer">MSN</a></li>
-						<li><a href="#footer">Microsoft Store</a></li>
-					</ul>
+					<a href="#">
+						<em>About McDonalds</em><br />
+						<span>McDonalds is one of the most <br />popular hamburgers in the world <br />that would satisfy anyone.</span>
+					</a>
 				</li>
 				<li>
-					<a href="#footer">Who We Are</a>
-					<ul>
-						<li><a href="#footer">Where to buy</a></li>
-						<li><a href="#footer">Awards</a></li>
-						<li><a href="#footer">Latest News</a></li>
-						<li><a href="#footer">About Microsoft</a></li>
-						<li><a href="#footer">Employment</a></li>
-						<li><a href="#footer">Press Room</a></li>
-					</ul>
+					<a href="#">
+						<em>Careers</em><br />
+						<span>McDonalds is hiring to work <br />for a company that values <br />inspiration and creativeness.</span>
+					</a>
 				</li>
 				<li>
-					<a href="#footer">Need Assistance?</a>
-					<ul>
-						<li><a href="#footer">Contact Us</a></li>
-						<li><a href="#footer">Microsoft Store</a></li>
-						<li><a href="#footer">Commercial</a></li>
-						<li><a href="#footer">Product Registration</a></li>
-						<li>Monday to Friday from 9:00 to 18:00</li>
-					</ul>
+					<a href="#">
+						<em>Franchise</em><br />
+						<span>Find out more about how you can <br />open your very own McDonalds!</span>
+					</a>
 				</li>
-				<li class="last">
-					<a href="#footer">Community</a>
-					<ul>
-						<li><a href="#footer .last"><img src="images/layout/sns1.jpg" alt="" /></a></li>
-						<li><a href="#footer .last"><img src="images/layout/sns2.jpg" alt="" /></a></li>
-						<li><a href="#footer .last"><img src="images/layout/sns3.jpg" alt="" /></a></li>
-						<li><a href="#footer .last"><img src="images/layout/sns4.jpg" alt="" /></a></li>
-						<li><a href="#footer .last"><img src="images/layout/sns5.jpg" alt="" /></a></li>
-						<li><a href="#footer .last"><img src="images/layout/sns6.jpg" alt="" /></a></li>
-						<li><a href="#footer .last"><img src="images/layout/sns7.jpg" alt="" /></a></li>
-						<li><a href="#footer .last"><img src="images/layout/sns8.jpg" alt="" /></a></li>
-					</ul>
+				<li>
+					<a href="#">
+						<em>Foundation</em><br />
+						<span>Our foundation is working in <br />the communities to end war and <br />prolong peace among all nations.</span>
+					</a>
 				</li>
 			</ul>
+			
 		</footer>
 	</div><!-- //footerwrap -->
-	<div id="address">
-		<p>Shop at the Microsoft Online Store (1-800-MICROSOFT), visit a Microsoft Retail Store, or find a reseller.<br />Copyright &#169; 2015 Microsoft corp. All rights reserved.</p>
-		<ul>
-			<li><a href="sub1.html">About Microsoft</a></li>
-			<li class="between"><a href="#address">Sitemap</a></li>
-			<li class="between"><a href="#address">Terms of Use</a></li>
-			<li class="between"><a href="#address"><img src="images/layout/flag.jpg" alt="" /></a></li>
+	
+	<div id="bottomM">
+		<ul class="shortcut">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
 		</ul>
 	</div>
-
+	<div id="hider">
+		<ul class="fnav">
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Corporate Responsibility</a></li>
+			<li><a href="#">McDonalds Worldwide</a></li>
+			<li><a href="#">Site Map</a></li>
+			<li><a href="#">Press Center</a></li>
+		</ul>
+		<address>&#169; 2010-2015 McDonald's. All Rights Reserved.</address>
+		<p class="back"><a href="">Go to top <img src="images/backtop.png" alt="" /></a></p>
+	</div>
+	
 </body>
 </html>
 
