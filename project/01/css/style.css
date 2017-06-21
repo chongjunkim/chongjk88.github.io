@@ -435,6 +435,13 @@ h2, h3 {
 }
 
 
+@media (max-width: 1100px) {
+    .mute, .loading {
+        display: none;
+    }
+}
+
+
 
 
 
