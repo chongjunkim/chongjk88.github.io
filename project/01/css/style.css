@@ -190,7 +190,7 @@ h2, h3 {
 }
 .loading {
 	position: absolute; 
-	top: 50%;
+	top: 42%;
 	left: 50%; 
 	width: 200px; 
 	transform: translateX(-50%); 
