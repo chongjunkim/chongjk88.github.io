@@ -120,10 +120,11 @@ html[xmlns] .clearfix { display: block; }
 .circle-container h3 {
 	display: block;
 	text-align: center;
-	font-size: 2.25em;
+	font-size: 1.4em;
 	line-height: 1.4em;
 	color: #363636;
 	text-shadow: 1px 1px 0 #fff;
+    padding-top: 5%;
 }
 .circlestat {
 	margin-left: 50%; 
