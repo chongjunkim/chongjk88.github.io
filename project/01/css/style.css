@@ -259,6 +259,12 @@ h2, h3 {
         margin-right: 0;
     }
 
+.characterList_preload{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
 .characterList1:after {
     content: url('../img/character1-2.png');
     position: absolute;
@@ -267,7 +273,6 @@ h2, h3 {
     opacity: 0.2;
     z-index: 0;
 }
-
 .characterList2:after {
     content: url('../img/character2-2.png');
     position: absolute;
@@ -275,7 +280,6 @@ h2, h3 {
     left: -104px;
     opacity: 0.2;
 }
-
 .characterList3:after {
     content: url('../img/character3-2.png');
     position: absolute;
@@ -283,7 +287,6 @@ h2, h3 {
     left: -175px;
     opacity: 0.2;
 }
-
 .characterList4:after {
     content: url('../img/character4-2.png');
     position: absolute;
@@ -308,6 +311,12 @@ h2, h3 {
     animation: linear;
     animation-delay: 2s;
 }
+
+.characterList_text h3 {
+    padding-top: 20px;
+}
+
+
 
 
 .textBox {

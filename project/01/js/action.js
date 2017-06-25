@@ -11,15 +11,6 @@ $(function () {
     backToTop();
 });
 
-$.preload([
-    '/img/heroBG_hover.jpg',
-    '/img/character1-2.png',
-    '/img/character2-2.png',
-    '/img/character3-2.png',
-    '/img/character4-2.png'
-]);
-
-
 function navBar() {
     'use strict';
     
