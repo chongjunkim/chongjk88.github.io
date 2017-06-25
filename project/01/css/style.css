@@ -254,6 +254,8 @@ h2, h3 {
         position: relative;
         margin-right: 130px;
         display: inline-block;
+        width: 200px;
+        vertical-align: top;
     }
     .characterList:last-of-type {
         margin-right: 0;
@@ -314,6 +316,10 @@ h2, h3 {
 
 .characterList_text h3 {
     padding-top: 20px;
+}
+.characterList_text p {
+    font-size: 16px;
+    text-align: center;
 }
 
 
@@ -560,7 +566,7 @@ h2, h3 {
     
     
     .mainCategory1 {
-        height: 1090px;
+        height: 100%;
     }
     
     
