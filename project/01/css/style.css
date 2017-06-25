@@ -457,6 +457,7 @@ h2, h3 {
     .characterList {
         margin-right: auto;
         margin: 10px;
+        width: 200px;
     }
     
     
