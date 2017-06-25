@@ -1,4 +1,4 @@
-/*global $, jQuery, project*/
+/*global $, jQuery, project, mobile, length, each*/
 
 $(function () {
     'use strict';
