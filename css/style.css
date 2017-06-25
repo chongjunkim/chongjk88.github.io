@@ -4,7 +4,7 @@
 	width: 100%; 
 	height: 100%; 
 	overflow: hidden; 
-	background: #eee; 
+	background: url(../img/hero.jpg) center / cover no-repeat; 
 }
 #wrap a.open {
 	position: absolute; 
