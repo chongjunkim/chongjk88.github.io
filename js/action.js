@@ -10,13 +10,6 @@ $(function () {
 	arrows();
 });
 
-$.preload([
-    '/img/1_smallslide.jpg',
-    '/img/2_smallslide.jpg',
-    '/img/3_smallslide.jpg',
-    '/img/4_smallslide.jpg'
-]);
-
 function opn() {
     'use strict';
 	$("#sites ul.steps, #stats, #carousel, .summary").hide();
@@ -560,13 +553,13 @@ function details() {
 	$("#sites a.back").hide();
 	$("#sites a.button").hide();
 	$("#sites p.title").hide();
-	$(".project_img").hide();
+	$(".project_img").css({"opacity" : 0});
 	
 	$("#sites dl dd ul li a.go_details").click(function () {
 		$("#bottom").animate({height: "100%", "padding-bottom" : "280px"}, 1000, "easeInQuart");
 		$("#sites_details").animate({"opacity" : "show"}, 400);
         $("#stats").animate({"opacity" : "hide"}, 400);
-        setTimeout(function () {$(".project_img").stop().animate({"opacity" : "show"}, 800); }, 1300);
+        setTimeout(function () {$(".project_img").stop().animate({"opacity" : 1}, 800); }, 1300);
 		setTimeout(function () {$("#sites a.back").animate({"opacity" : "show"}, 500); }, 2000);
 		
 		$("#sites a.button").show();
