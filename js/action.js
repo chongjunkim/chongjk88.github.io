@@ -41,6 +41,8 @@ function opn() {
             setTimeout(function () {
                 $(".summary").stop().animate({opacity : "show"}, 1500, "easeOutQuint");
             }, 1800);
+            
+            $("#top").css({"position" : "fixed"});
 		}
 		
 		return false;
@@ -58,6 +60,9 @@ function cls() {
 		$("#stats, #carousel").stop().animate({opacity : "hide"}, 800, "easeOutQuint");
 		$(".summary").stop().animate({opacity : "hide"}, 800, "easeOutQuint");
 		
+        
+        $("#top").css({"position" : "absolute"});
+        
 		return false;
 	});
 }
