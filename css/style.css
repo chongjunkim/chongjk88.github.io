@@ -444,7 +444,7 @@ html[xmlns] .clearfix { display: block; }
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%); 	
+	-ms-transform: translateX(-50%);
 }
 #sites_details div p.project_img a img {
 	width: 1000px; 

@@ -11,23 +11,12 @@ $(function () {
     backToTop();
 });
 
-function preload(arrayOfImages) {
-    'use strict';
-    $(arrayOfImages).each(function () {
-        $('<img/>')[0].src = this;
-        // Alternatively you could use:
-        // (new Image()).src = this;
-    });
-}
-
-// Usage:
-
-preload([
-    'img/heroBG_hover.jpg',
-    'img/character1-2.png',
-    'img/character2-2.png',
-    'img/character3-2.png',
-    'img/character4-2.png'
+$.preload([
+    '/img/heroBG_hover.jpg',
+    '/img/character1-2.png',
+    '/img/character2-2.png',
+    '/img/character3-2.png',
+    '/img/character4-2.png'
 ]);
 
 

@@ -10,22 +10,11 @@ $(function () {
 	arrows();
 });
 
-function preload(arrayOfImages) {
-    'use strict';
-    $(arrayOfImages).each(function () {
-        $('<img/>')[0].src = this;
-        // Alternatively you could use:
-        // (new Image()).src = this;
-    });
-}
-
-// Usage:
-
-preload([
-    'img/1_smallslide.png',
-    'img/2_smallslide.png',
-    'img/3_smallslide.png',
-    'img/4_smallslide.png'
+$.preload([
+    '/img/1_smallslide.jpg',
+    '/img/2_smallslide.jpg',
+    '/img/3_smallslide.jpg',
+    '/img/4_smallslide.jpg'
 ]);
 
 function opn() {
@@ -577,7 +566,7 @@ function details() {
 		$("#bottom").animate({height: "100%", "padding-bottom" : "280px"}, 1000, "easeInQuart");
 		$("#sites_details").animate({"opacity" : "show"}, 400);
         $("#stats").animate({"opacity" : "hide"}, 400);
-        setTimeout(function () {$(".project_img").stop().animate({"opacity" : "show"}, 800); }, 1000);
+        setTimeout(function () {$(".project_img").stop().animate({"opacity" : "show"}, 800); }, 1300);
 		setTimeout(function () {$("#sites a.back").animate({"opacity" : "show"}, 500); }, 2000);
 		
 		$("#sites a.button").show();
