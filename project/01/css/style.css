@@ -320,7 +320,7 @@ h2, h3 {
 .characterList .characterList_text,
 .characterList .characterList_text h3,
 .characterList .characterList_text p {
-    position:inherit;
+    position: relative;
     z-index: 1;
 }
 .characterList .characterList_text:before {
@@ -484,6 +484,9 @@ h2, h3 {
         width: 200px;
     }
     
+    .characterList .characterList_text:before {
+        left: -120px;
+    }
     
     
     .focusImg {
