@@ -40,7 +40,7 @@ function opn() {
 		setTimeout(function () {
 			$("#sites ul.steps").stop().animate({opacity : "show"}, 1000, "easeOutQuint");
 		}, 1800);
-		if (width > 1000) {
+		if (width > 660) {
 			setTimeout(function () {
 				$("#stats, #carousel").stop().animate({opacity : "show"}, 800, "easeOutQuint");
 				$('.circlestat').empty().circliful();
@@ -581,10 +581,10 @@ function details() {
 		setTimeout(function () {$("#sites a.back").animate({"opacity" : "show"}, 500); }, 2000);
 		
 		$("#sites a.button").show();
-		$("#sites dl dt:eq(0)").animate({"padding-top" : "37px"}, 1000);
-		$("#sites dl dt:eq(1)").animate({"padding-top" : "37px"}, 1000);
-		$("#sites dl dt:eq(2)").animate({"padding-top" : "37px"}, 1000);
-		$("#sites dl dt:eq(3)").animate({"padding-top" : "37px"}, 1000);
+		$("#sites dl dt:eq(0)").animate({"padding-top" : "3.3%"}, 1000);
+		$("#sites dl dt:eq(1)").animate({"padding-top" : "3.3%"}, 1000);
+		$("#sites dl dt:eq(2)").animate({"padding-top" : "3.3%"}, 1000);
+		$("#sites dl dt:eq(3)").animate({"padding-top" : "3.3%"}, 1000);
 		$("#sites dl dt:eq(4)").animate({"opacity" : "hide"}, 1000);
 		$("#sites dl dd").animate({"top" : "-100px"}, 1000);
 		

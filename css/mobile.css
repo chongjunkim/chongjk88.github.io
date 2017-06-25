@@ -13,7 +13,6 @@
 		transform: translateX(-50%);
 		-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
-		display: block;
 		width: 80%;
 	}
 	#m_stats dl {
@@ -43,8 +42,9 @@
 	.circle-container {
         display: none;
     }
+    
 	.m_circlestat {
-        display: block;
+        display: none;
     }
 }
 
@@ -55,7 +55,7 @@
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 660px) {
     #title p {display: none; }
     #title h3 {
     	font-size: 12px
@@ -163,7 +163,7 @@
 		-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
 		top: 10%; 
-		width: 60%; 
+		height: 70%;
 		z-index: 30; 
 	}
 	#m_sites dl dd img.inside {
@@ -173,10 +173,12 @@
 		-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
 		top: 10%; 
-		width: 60%; 
+		height: 70%;
 		z-index: 20; 
 	}
 	#m_sites dl dd h3 {
+        position: absolute;
+        bottom: 38px;
 		width: 100%; 
 		text-align: center; 
 		margin-top: 62%; 
