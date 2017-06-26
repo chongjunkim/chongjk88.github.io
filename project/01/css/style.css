@@ -45,9 +45,123 @@ h2, h3 {
     text-align: center;
 }
 
-/*******************
-    Main Styling
-********************/
+/***********************************************************************************************
+    |\  |   /\  \    /
+    | \ |  /__\  \  /
+    |  \| /    \  \/
+************************************************************************************************/
+#headerwrap {
+	position:relative;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	z-index: 2000;
+    background: transparent;
+}
+
+#header {
+	position: fixed; 
+	top: -260px; 
+	width: 100%; 
+	height: 330px;
+	z-index: 900; 
+	overflow: hidden; 
+}
+
+#menu {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	text-align:center;
+	z-index: 900;
+}
+#menu h1 {
+	width: 840px; 
+	height: 110px; 
+	padding-top: 30px;
+	position: absolute; 
+	bottom: 0; 
+	left: 50%; 
+	transform: translateX(-50%); 
+	-webkit-transform: translateX(-50%); 
+	-ms-transform: translateX(-50%);	
+}
+#menu ul {
+	position: absolute;
+	bottom: 0;  
+	left: 50%; 
+	transform: translateX(-50%); 
+	-webkit-transform: translateX(-50%); 
+	-ms-transform: translateX(-50%);	
+	width: 840px; 
+	height: 35px; 
+	margin: auto; 
+}
+#menu ul li {
+	float: left;
+	width: 140px;
+	height: 35px;
+	border-left: 1px solid transparent;
+	text-transform: uppercase;
+	transition:0.3s linear;
+}
+#menu ul li a {
+	display: block;
+	line-height: 3;
+}
+    #menu ul li:first-child {
+        border: none; 
+    }
+    #menu ul li:hover a {
+        text-shadow: 0 0 10px #0099ff;
+        color: #8bd1ff;
+    }
+
+/*
+#main_nav {
+	position: absolute; 
+	bottom: -40px; 
+	left: 0; 
+	width: 100%; 
+	height: 300px; 
+	margin: auto; 
+	overflow: hidden; 
+	border-bottom: 1px solid #c8d1da; 
+	z-index: 800; 
+}
+#gnb {
+	width: 845px;
+	height: 100%; 
+	margin: auto; 
+}
+#gnb .m {
+	float: left; 
+	width: 140px; 
+	height: 100%; 
+	margin-left: 1px; 
+	text-transform: uppercase; 
+}
+#gnb li:first-child {
+	margin-left: 0; 
+}
+#gnb .m a {
+	width: 100%; 
+	display: block; 
+	text-align: center; 
+	line-height: 3; 
+	transition: 0.1s linear; 
+}
+#gnb .m a:hover {
+	text-decoration: underline;
+}
+#gnb .m ul {
+	width: 140px; 
+}
+*/
+
+
+
 #hero {
     position: relative;
     width: 100%;
@@ -497,17 +611,25 @@ h2, h3 {
     }
 }
 
-
+@media (min-width: 1100px) {
+    #nav {
+        display: none;
+    }
+    #headerwrap {
+        display: visible;
+    }
+}
 @media (max-width: 1100px) {
     .mute, .loading {
         display: none;
     }
+    #nav {
+        display: visible;
+    }
+    #headerwrap {
+        display: none;
+    }
 }
-
-
-
-
-
 
 
 

@@ -1,7 +1,8 @@
-/*global $, jQuery, navBar, navBarRotate, heroHover, init, videoMute, visualBanner, backToTop*/
+/*global $, jQuery, gnb, navBar, navBarRotate, heroHover, init, videoMute, visualBanner, backToTop*/
 
 $(function () {
     'use strict';
+    gnb();
     navBar();
     navBarRotate();
     heroHover();
@@ -10,6 +11,78 @@ $(function () {
     visualBanner();
     backToTop();
 });
+
+function gnb() {
+    'use strict';
+	$("#main_nav").hide();
+//	$("#header").css("top", "-260px");
+	var animateLock = 0;
+	
+	
+	$(window).scroll(function () {
+		var top = $(window).scrollTop();
+		
+		
+		if (top > 90) {
+			if (animateLock === 0) {
+				animateLock = 1;
+				$('#header').stop().animate({top : "-295px", backgroundColor : "rgba(2,18,36,0.7)"}, 300);
+//				$("#menu ul").stop().animate({bottom : "0"}, 100);
+//				$("#menu ul").mouseover(function () {
+//                    $("#header").stop().animate({top : "-105px"}, 500);
+//                    $("#menu ul").stop().animate({bottom : "260px"}, 500);
+//                    $("#main_nav").stop().fadeTo("slow", 1);
+//				});
+//				 
+//                $("#header").mouseleave(function () {
+//                    $("#header").stop().animate({top : "-365px"}, 500);
+//                    $("#menu ul").stop().animate({bottom : "0"}, 500);
+//                    $("#main_nav").stop().fadeTo("fast", 0);
+//				});
+			}
+			
+		} else {
+			if (animateLock === 1) {
+				animateLock = 0;
+				$('#header').stop().animate({top : "-260px", backgroundColor : "transparent"}, 200);
+//				$("#menu h1").stop().animate({bottom : "0"}, 100);
+//				$("#menu ul").stop().animate({bottom : "0"}, 100);
+//				$("#main_nav").stop().fadeTo("fast", 0);
+//				$("#menu ul").mouseover(function () {
+//                    $("#header").stop().animate({top : "0"}, 500);
+//                    $("#menu h1").stop().animate({bottom : "260px"}, 500);
+//                    $("#menu ul").stop().animate({bottom : "260px"}, 500);
+//                    $("#main_nav").stop().fadeTo("slow", 1);
+//				});
+//				 
+//                $("#header").mouseleave(function () {
+//                    $("#header").stop().animate({top : "-260px"}, 500);
+//                    $("#menu h1").stop().animate({bottom : "0"}, 500);
+//                    $("#menu ul").stop().animate({bottom : "0"}, 500);
+//                    $("#main_nav").stop().fadeTo("fast", 0);
+//				});
+			}
+			
+		}
+	});
+	
+//	$("#menu ul").mouseover(function () {
+//        $("#header").stop().animate({top : "0"}, 500);
+//        $("#menu h1").stop().animate({bottom : "260px"}, 500);
+//        $("#menu ul").stop().animate({bottom : "260px"}, 500);
+//        $("#main_nav").stop().fadeTo("slow", 1);
+//	});
+//	 
+//    $("#header").mouseleave(function () {
+//        $("#header").stop().animate({top : "-260px"}, 500);
+//        $("#menu h1").stop().animate({bottom : "0"}, 500);
+//        $("#menu ul").stop().animate({bottom : "0"}, 500);
+//        $("#main_nav").stop().fadeTo("fast", 0);
+//	});
+	
+	
+}
+
 
 function navBar() {
     'use strict';
